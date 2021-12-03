@@ -21,10 +21,7 @@ services:
     environment:
       CORS_ALLOW_ORIGIN: "http://localhost:3000,http://localhost:${FRONTEND:-4000}"
       SITE: "Plone"
+      PROFILES: "plone.volto:default-homepage"
+      ADDONS: "plone.volto"
     volumes:
-    - data:/data
-
-volumes:
-  data:
-    driver: local
-l
+    - ./data:/data
