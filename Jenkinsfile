@@ -2,12 +2,12 @@ pipeline {
   environment {
     RANCHER_STACKID = ""
     RANCHER_ENVID = ""
-    GIT_NAME = "volto-frontend-template"
-    registry = "eeacms/volto-frontend-template"
-    template = "templates/volto-frontend-template"
+    GIT_NAME = "volto-kitkat-frontend"
+    registry = "eeacms/volto-kitkat-frontend"
+    template = "templates/volto-kitkat-frontend"
     dockerImage = ''
     tagName = ''
-    SONARQUBE_TAG = 'volto-frontend-template.eionet.europa.eu'
+    SONARQUBE_TAG = 'volto-kitkat-frontend.eionet.europa.eu'
   }
 
   agent any
@@ -216,5 +216,8 @@ pipeline {
         emailext (subject: '$DEFAULT_SUBJECT', to: '$DEFAULT_RECIPIENTS', body: details)
       }
     }
+  }
+}
+}
   }
 }
