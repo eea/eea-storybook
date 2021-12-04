@@ -16,7 +16,10 @@
   },
   "private": true,
   "workspaces": ["src/addons/*"],
-  "addons": ["@eeacms/volto-eea-kitkat"],
+  "addons": [
+    "@eeacms/volto-eea-kitkat",
+    "@eeacms/volto-eea-design-system"
+  ],
   "jest": {
     "modulePathIgnorePatterns": [
       "api"
