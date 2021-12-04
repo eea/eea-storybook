@@ -56,13 +56,13 @@ A training on how to create your own website using Volto is available as part of
    Inside it, you will find the Plone database,
    the site changes are persisted inside it.
 
-8. Start frontend in production mode
-
-        yarn start:prod
- 
-9. Start frontend in develop mode without the need to build the JS resources
+8. Start frontend in develop mode without the need to build the JS resources
 
         yarn start
+
+9. Or start frontend in production mode
+
+         yarn start:prod
 
 10. See application at http://localhost:3000
 
