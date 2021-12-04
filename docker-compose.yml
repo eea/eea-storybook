@@ -1,18 +1,19 @@
 version: '3'
 
 services:
-  frontend:
-    image: eeacms/volto-kitkat-frontend
-    ports:
-    - "${FRONTEND:-4000}:4000"
-    depends_on:
-    - backend
-    environment:
-      PORT: "${FRONTEND:-4000}"
-      API_PATH: "http://localhost:${BACKEND:-8080}/Plone"
-      INTERNAL_API_PATH: "http://backend:${BACKEND:-8080}/Plone"
-      RAZZLE_API_PATH: "http://localhost:${BACKEND:-8080}/Plone"
-      RAZZLE_INTERNAL_API_PATH: "http://backend:${BACKEND:-8080}/Plone"
+# uncomment if you want to run frontend from a docker image
+#  frontend:
+#    image: eeacms/volto-kitkat-frontend
+#    ports:
+#    - "${FRONTEND:-4000}:4000"
+#    depends_on:
+#    - backend
+#    environment:
+#      PORT: "${FRONTEND:-4000}"
+#      API_PATH: "http://localhost:${BACKEND:-8080}/Plone"
+#      INTERNAL_API_PATH: "http://backend:${BACKEND:-8080}/Plone"
+#      RAZZLE_API_PATH: "http://localhost:${BACKEND:-8080}/Plone"
+#      RAZZLE_INTERNAL_API_PATH: "http://backend:${BACKEND:-8080}/Plone"
 
   backend:
     image: eeacms/plonesaas
@@ -24,7 +25,8 @@ services:
       CORS_ALLOW_ORIGIN: "http://localhost:3000,http://localhost:${FRONTEND:-4000}"
       SITE: "Plone"
       PROFILES: "plone.volto:default-homepage"
-      ADDONS: "plone.volto eea.kitkat"
+      ADDONS: "plone.volto eea.kitkat plone.rest plone.restapi"
+      VERSIONS: "plone.rest=2.0.0a1 plone.restapi=8.16.2"
     volumes:
     - ./data:/data
 
