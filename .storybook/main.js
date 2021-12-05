@@ -89,7 +89,23 @@ module.exports = {
     resultConfig.module.rules[1].exclude = /node_modules\/(?!(@plone\/volto)\/)/;
     // console.dir(resultConfig.module.rules[1].exclude, { depth: null });
 
-    return resultConfig;
+    const addonExtenders = registry.getAddonExtenders().map((m) => require(m));
+    console.log('addonExtenders', addonExtenders);
+
+    const extendedConfig = addonExtenders.reduce(
+      (acc, extender) => extender.modify(acc, { target: 'web', dev: 'dev' }, config),
+      resultConfig,
+    );
+
+    // TODO: support addon extender plugins razzle
+    // const plugins = addonExtenders.reduce(
+    //   (acc, extender) => extender.plugins(acc),
+    //   defaultPlugins,
+    // );
+    //
+    console.log('alias', extendedConfig.resolve.alias);
+
+    return extendedConfig;
   },
   babel: async (options) => {
     return {
