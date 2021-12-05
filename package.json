@@ -12,7 +12,9 @@
     "test": "razzle test --env=jest-environment-jsdom-sixteen --passWithNoTests",
     "start:prod": "NODE_ENV=production node build/server.js",
     "i18n": "NODE_ENV=production node node_modules/@plone/volto/src/i18n.js",
-    "develop": "missdev --config=jsconfig.json --output=addons --fetch-https"
+    "develop": "missdev --config=jsconfig.json --output=addons --fetch-https",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "private": true,
   "workspaces": ["src/addons/*"],
@@ -109,6 +111,11 @@
     "@eeacms/volto-eea-kitkat": "*"
 },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.3.0",
+    "@storybook/addon-controls": "6.3.0",
+    "@storybook/addon-essentials": "^6.3.0",
+    "@storybook/addon-links": "^6.3.0",
+    "@storybook/react": "^6.3.0",
     "eslint-plugin-prettier": "3.1.3",
     "prettier": "2.0.5",
     "stylelint": "13.3.3",
