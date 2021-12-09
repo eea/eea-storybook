@@ -17,7 +17,9 @@
     "build-storybook": "build-storybook"
   },
   "private": true,
-  "workspaces": ["src/addons/*"],
+  "workspaces": [
+    "src/addons/*"
+  ],
   "addons": [
     "@eeacms/volto-eea-kitkat",
     "@eeacms/volto-eea-design-system"
@@ -95,7 +97,7 @@
     },
     "ignoreFiles": "theme/themes/default/**/*.overrides"
   },
-    "browserslist": [
+  "browserslist": [
     ">1%",
     "last 4 versions",
     "Firefox ESR",
@@ -109,7 +111,7 @@
     "@plone/volto": "14.0.0-alpha.39",
     "@eeacms/volto-eea-design-system": "*",
     "@eeacms/volto-eea-kitkat": "*"
-},
+  },
   "devDependencies": {
     "@storybook/addon-actions": "^6.3.0",
     "@storybook/addon-controls": "6.3.0",

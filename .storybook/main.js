@@ -93,7 +93,8 @@ module.exports = {
     console.log('addonExtenders', addonExtenders);
 
     const extendedConfig = addonExtenders.reduce(
-      (acc, extender) => extender.modify(acc, { target: 'web', dev: 'dev' }, config),
+      (acc, extender) =>
+        extender.modify(acc, { target: 'web', dev: 'dev' }, config),
       resultConfig,
     );
 
