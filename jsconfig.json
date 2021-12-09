@@ -1,6 +1,9 @@
 {
     "compilerOptions": {
         "paths": {
+            "volto-slate": [
+                "addons/volto-slate/src"
+            ],
             "@eeacms/volto-matomo": [
                 "addons/volto-matomo/src"
             ],
@@ -30,9 +33,6 @@
             ],
             "@eeacms/volto-widget-geolocation": [
                 "addons/volto-widget-geolocation/src"
-            ],
-            "volto-slate": [
-                "addons/volto-slate/src"
             ],
             "@eeacms/volto-slate-metadata-mentions": [
                 "addons/volto-slate-metadata-mentions/src"
@@ -81,6 +81,9 @@
             ],
             "@eeacms/volto-eea-kitkat": [
                 "addons/volto-eea-kitkat/src"
+            ],
+            "@eeacms/volto-ims-theme": [
+                "addons/volto-ims-theme/src"
             ],
             "@eeacms/volto-eea-design-system": [
                 "addons/volto-eea-design-system/src"
