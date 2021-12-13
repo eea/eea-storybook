@@ -14,15 +14,15 @@
     "i18n": "NODE_ENV=production node node_modules/@plone/volto/src/i18n.js",
     "develop": "missdev --config=jsconfig.json --output=addons --fetch-https",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -o docs"
   },
   "private": true,
   "workspaces": [
     "src/addons/*"
   ],
   "addons": [
-    "@eeacms/volto-eea-kitkat",
-    "@eeacms/volto-eea-design-system"
+    "@eeacms/volto-eea-design-system",
+    "@eeacms/volto-eea-kitkat"
   ],
   "jest": {
     "modulePathIgnorePatterns": [
