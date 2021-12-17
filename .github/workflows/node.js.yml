@@ -33,4 +33,4 @@ jobs:
            git config user.email github-actions@github.com
            git add docs
            git diff --staged --quiet || git commit -m "Autobuild of storybook docs"
-           git push
+           git push  origin ${{ github.head_ref }}
