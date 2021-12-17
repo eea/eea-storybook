@@ -36,5 +36,5 @@ jobs:
            echo ${{ github.base_ref }}
            echo ${{ github.ref }}
            echo ${{ github.ref_name }}
-           github.ref_name
+           echo ${{ github.head_ref }}
            git push  origin ${{ github.head_ref }}
