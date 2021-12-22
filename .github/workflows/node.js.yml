@@ -25,9 +25,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Push Storybook build changes
       run: |
-           npm install -g mrs-developer
-           git status
+           git checkout -b ${{ github.head_ref }}
+           git branch --set-upstream-to=origin/${{ github.head_ref }} ${{ github.head_ref }}
            git branch -a
+           npm install -g mrs-developer
            yarn develop
            yarn install
            yarn build-storybook
