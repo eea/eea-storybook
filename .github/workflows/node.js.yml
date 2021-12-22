@@ -30,6 +30,7 @@ jobs:
            git branch --set-upstream-to=origin/${{ github.head_ref }} ${{ github.head_ref }}
            git branch -a
            git reset --hard ${{ github.head_ref }}
+           git config pull.ff only  
            git pull
            npm install -g mrs-developer
            yarn develop
