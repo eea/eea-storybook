@@ -19,26 +19,20 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.head_ref }}
     - name: Use Node.js ${{ matrix.node-version }} to build storybook website
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
     - name: Push Storybook build changes
       run: |
-           git fetch 
-           git checkout -b ${{ github.head_ref }}
-           git branch --set-upstream-to=origin/${{ github.head_ref }} ${{ github.head_ref }}
-           git branch -a
-           git reset --hard ${{ github.head_ref }}
-           git config pull.rebase false
-           git pull
            npm install -g mrs-developer
            yarn develop
            yarn install
            yarn build-storybook
            git config user.name github-actions
            git config user.email github-actions@github.com
-           git pull
            git add docs
            git diff --staged --quiet || git commit -m "Autobuild of storybook docs"
-           git push -u origin ${{ github.head_ref }}
+           git push
