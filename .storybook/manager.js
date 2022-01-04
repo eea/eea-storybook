@@ -1,4 +1,5 @@
 import { addons } from '@storybook/addons';
+import eeatheme from './eea-theme';
 
 addons.setConfig({
   isFullscreen: false,
@@ -8,7 +9,7 @@ addons.setConfig({
   sidebarAnimations: true,
   enableShortcuts: true,
   isToolshown: true,
-  theme: undefined,
+  theme: eeatheme,
   selectedPanel: undefined,
   initialActive: 'sidebar',
   showRoots: true,
