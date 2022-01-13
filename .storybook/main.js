@@ -37,7 +37,6 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/addon-a11y',
     '@whitespace/storybook-addon-html',
-    '@storybook/addon-cssresources',
     // '@storybook/preset-scss',
   ],
   webpackFinal: async (config, { configType }) => {
