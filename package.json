@@ -124,7 +124,7 @@
   "dependencies": {
     "@eeacms/volto-eea-design-system": "*",
     "@eeacms/volto-eea-kitkat": "*",
-    "@plone/volto": "14.0.2",
+    "@plone/volto": "14.3.0",
     "@storybook/addon-a11y": "^6.4.9",
     "@storybook/addon-cssresources": "6.2.9",
     "@storybook/html": "^6.4.9",
