@@ -2330,14 +2330,6 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@semantic-ui-react/event-stack@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@semantic-ui-react/event-stack/-/event-stack-2.0.0.tgz#d2d568a9fb0ee204b0e40d6b73ac2a2403c08451"
-  integrity sha512-OLw7l+6sXFp7qJQGIpEktqhkQFOKsM8hto4RSkAkqs1NG/rG2Jb7ct8so7x4qaP3UNJEPUfnrFGuCCz3laLIBQ==
-  dependencies:
-    exenv "^1.2.2"
-    prop-types "^15.6.2"
-
 "@semantic-ui-react/event-stack@^3.1.2":
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/@semantic-ui-react/event-stack/-/event-stack-3.1.2.tgz#14fac9796695aa3967962d94ea9733a85325f9c4"
@@ -4114,11 +4106,6 @@
     "@types/prop-types" "*"
     "@types/scheduler" "*"
     csstype "^3.0.2"
-
-"@types/resize-observer-browser@^0.1.6":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@types/resize-observer-browser/-/resize-observer-browser-0.1.7.tgz#294aaadf24ac6580b8fbd1fe3ab7b59fe85f9ef3"
-  integrity sha512-G9eN0Sn0ii9PWQ3Vl72jDPgeJwRWhv2Qk/nQkJuWmRmOB4HX3/BhD5SE1dZs/hzPZL/WKnvF0RHdTSG54QJFyg==
 
 "@types/responselike@*", "@types/responselike@^1.0.0":
   version "1.0.0"
@@ -13262,7 +13249,7 @@ jwt-decode@2.2.0:
   resolved "https://registry.yarnpkg.com/jwt-decode/-/jwt-decode-2.2.0.tgz#7d86bd56679f58ce6a84704a657dd392bba81a79"
   integrity sha1-fYa9VmefWM5qhHBKZX3TkruoGnk=
 
-keyboard-key@^1.0.2, keyboard-key@^1.1.0:
+keyboard-key@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/keyboard-key/-/keyboard-key-1.1.0.tgz#6f2e8e37fa11475bb1f1d65d5174f1b35653f5b7"
   integrity sha512-qkBzPTi3rlAKvX7k0/ub44sqOfXeLc/jcnGGmj5c7BJpU8eDrEVPyhCvNYAaoubbsLm9uGWwQJO1ytQK1a9/dQ==
@@ -17568,16 +17555,6 @@ react-refresh@^0.8.1:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
 
-react-resize-detector@6.7.6:
-  version "6.7.6"
-  resolved "https://registry.yarnpkg.com/react-resize-detector/-/react-resize-detector-6.7.6.tgz#4416994e5ead7eba76606e3a248a1dfca49b67a3"
-  integrity sha512-/6RZlul1yePSoYJxWxmmgjO320moeLC/khrwpEVIL+D2EjLKhqOwzFv+H8laMbImVj7Zu4FlMa0oA7au3/ChjQ==
-  dependencies:
-    "@types/resize-observer-browser" "^0.1.6"
-    lodash.debounce "^4.0.8"
-    lodash.throttle "^4.1.1"
-    resize-observer-polyfill "^1.5.1"
-
 react-router-config@5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/react-router-config/-/react-router-config-5.1.1.tgz#0f4263d1a80c6b2dc7b9c1902c9526478194a988"
@@ -17757,15 +17734,6 @@ react-textarea-autosize@^8.3.0:
     "@babel/runtime" "^7.10.2"
     use-composed-ref "^1.0.0"
     use-latest "^1.0.0"
-
-react-timeline-semantic-ui@1.0.13, react-timeline-semantic-ui@^1.0.13:
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/react-timeline-semantic-ui/-/react-timeline-semantic-ui-1.0.13.tgz#4cb55c4eb20d06e9e8ad0e88b0a60962fe7cbd17"
-  integrity sha512-awwxGBKoQ3rzZJKrBBDIOWAhsnoXa5I93Ox5Xx9CT6zGo2UaSRvm5dKOkMsnH3fk+/5AZlaHFPHvQTxBNnFEmQ==
-  dependencies:
-    prop-types "^15.6.2"
-    semantic-ui-css "^2.3.3"
-    semantic-ui-react "^0.82.2"
 
 react-toastify@5.4.1:
   version "5.4.1"
@@ -18485,7 +18453,7 @@ requires-port@^1.0.0:
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
-resize-observer-polyfill@^1.5.0, resize-observer-polyfill@^1.5.1:
+resize-observer-polyfill@^1.5.0:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
   integrity sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
@@ -18836,13 +18804,6 @@ selfsigned@^1.10.7:
   dependencies:
     node-forge "^0.10.0"
 
-semantic-ui-css@^2.3.3:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/semantic-ui-css/-/semantic-ui-css-2.4.1.tgz#f5aea39fafb787cbd905ec724272a3f9cba9004a"
-  integrity sha512-Pkp0p9oWOxlH0kODx7qFpIRYpK1T4WJOO4lNnpNPOoWKCrYsfHqYSKgk5fHfQtnWnsAKy7nLJMW02bgDWWFZFg==
-  dependencies:
-    jquery x.*
-
 semantic-ui-less@2.4.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/semantic-ui-less/-/semantic-ui-less-2.4.1.tgz#f5fe6d9160b6655a2f552e7ea553c5b896c2f1aa"
@@ -18867,19 +18828,6 @@ semantic-ui-react@2.0.3:
     prop-types "^15.7.2"
     react-is "^16.8.6 || ^17.0.0"
     react-popper "^2.2.4"
-    shallowequal "^1.1.0"
-
-semantic-ui-react@^0.82.2:
-  version "0.82.5"
-  resolved "https://registry.yarnpkg.com/semantic-ui-react/-/semantic-ui-react-0.82.5.tgz#3bc098a0b22d3a76d8d7fb020dee07311bc2784f"
-  integrity sha512-Vi7gvo9EbRyNckYd6a/RaY5zk02SFCrRbU9ukdM/OOK8CH7sjIB4f78TkHTUar20Zsw2w6UnFzYWemSvIYfsOQ==
-  dependencies:
-    "@babel/runtime" "^7.0.0"
-    "@semantic-ui-react/event-stack" "^2.0.0"
-    classnames "^2.2.6"
-    keyboard-key "^1.0.2"
-    lodash "^4.17.10"
-    prop-types "^15.6.2"
     shallowequal "^1.1.0"
 
 semver-compare@^1.0.0:
@@ -21315,10 +21263,10 @@ vm-browserify@^1.0.0, vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
 
-volto-slate@5.3.3:
-  version "5.3.3"
-  resolved "https://registry.yarnpkg.com/volto-slate/-/volto-slate-5.3.3.tgz#4af806ec9e84f141da3e38e9f98852679aed4fdd"
-  integrity sha512-D9HDlCJAt6FCAL1EQY9PdnLSp7aqdJqEoeI4Gl+omNvR+JtefkE6ilkFL6s+pITAyK3He5t704ujGgT7Wf8+HA==
+volto-slate@5.1.3:
+  version "5.1.3"
+  resolved "https://registry.yarnpkg.com/volto-slate/-/volto-slate-5.1.3.tgz#b5198b851df17081bd3b1c1453ace5bd97c0bc57"
+  integrity sha512-UAmOa6L7YLeZoghFCDGVs5zRu4cPbxQueFGiZtfPhE3mb1NXgKC+hf8PVflwpN2IVYcaDHjI9V0LVqmOL98n8A==
   dependencies:
     "@eeacms/volto-object-widget" "*"
     classnames "2.2.6"
