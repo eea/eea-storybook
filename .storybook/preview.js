@@ -24,7 +24,9 @@ export const decorators = [
   (Story) => (
     <IntlProvider messages={enMessages} locale="en" defaultLocale="en">
       <StaticRouter location="/">
-        <Story />
+        <div className="eea">
+          <Story />
+        </div>
       </StaticRouter>
     </IntlProvider>
   ),
