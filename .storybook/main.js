@@ -89,24 +89,14 @@ module.exports = {
       },
     };
     resultConfig.module.rules[1].exclude = /node_modules\/(?!(@plone\/volto)\/)/;
-    // console.dir(resultConfig.module.rules[1].exclude, { depth: null });
 
     const addonExtenders = registry.getAddonExtenders().map((m) => require(m));
-    console.log('addonExtenders', addonExtenders);
 
     const extendedConfig = addonExtenders.reduce(
       (acc, extender) =>
         extender.modify(acc, { target: 'web', dev: 'dev' }, config),
       resultConfig,
     );
-
-    // TODO: support addon extender plugins razzle
-    // const plugins = addonExtenders.reduce(
-    //   (acc, extender) => extender.plugins(acc),
-    //   defaultPlugins,
-    // );
-    //
-    console.log('alias', extendedConfig.resolve.alias);
 
     return extendedConfig;
   },
@@ -126,33 +116,3 @@ module.exports = {
     };
   },
 };
-
-// const path = require('path');
-// const lessPlugin = require('./webpack-less-plugin');
-//
-// module.exports = {
-//   stories: [
-//     '../node_modules/@plone/volto/src/**/*.stories.mdx',
-//     '../node_modules/@plone/volto/src/**/*.stories.@(js|jsx|ts|tsx)',
-//     '../src/addons/**/**/*.stories.mdx',
-//     '../src/addons/**/**/*.stories.@(js|jsx|ts|tsx)',
-//   ],
-//   addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
-//   webpackFinal: async (config) => {
-//     config.resolve.alias['@eeacms/eea-design-system'] = path.join(
-//       __dirname,
-//       './../src',
-//     );
-//     config.resolve.alias['../../theme.config'] = path.resolve(
-//       __dirname,
-//       '../theme/theme.config',
-//     );
-//     config.resolve.alias['../../theme.config$'] = path.resolve(
-//       __dirname,
-//       '../theme/theme.config',
-//     );
-//
-//     lessPlugin(config);
-//     return config;
-//   },
-// };
