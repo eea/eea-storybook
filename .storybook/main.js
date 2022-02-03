@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const makeLoaderFinder = require('razzle-dev-utils/makeLoaderFinder');
 const fileLoaderFinder = makeLoaderFinder('file-loader');
 
@@ -61,7 +62,7 @@ module.exports = {
     const registry = new AddonConfigurationRegistry(projectRootPath);
 
     config = lessPlugin({ registry }).modifyWebpackConfig({
-      env: { target: 'web', dev: 'dev' },
+      env: { target: 'web', dev: true },
       webpackConfig: config,
       webpackObject: webpack,
       options: {},
@@ -80,6 +81,22 @@ module.exports = {
         __SERVER__: false,
       }),
     );
+
+    const razzleOptions = {
+      cssPrefix: 'css',
+    };
+    const experimental = {};
+
+    const miniPlugin = new MiniCssExtractPlugin({
+      filename: `${razzleOptions.cssPrefix}/bundle.[${
+        experimental.newContentHash ? 'contenthash' : 'chunkhash'
+      }:8].css`,
+      chunkFilename: `${razzleOptions.cssPrefix}/[name].[${
+        experimental.newContentHash ? 'contenthash' : 'chunkhash'
+      }:8].chunk.css`,
+    });
+
+    config.plugins.unshift(miniPlugin);
 
     const resultConfig = {
       ...config,
