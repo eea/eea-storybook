@@ -6,7 +6,8 @@ import { StaticRouter } from 'react-router-dom';
 import { IntlProvider } from 'react-intl';
 import enMessages from '~/../locales/en.json';
 
-import '~/theme';
+import '@eeacms/volto-eea-design-system/semantic.less';
+import '@plone/volto/../theme/themes/pastanaga/extras/extras.less';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -23,7 +24,9 @@ export const decorators = [
   (Story) => (
     <IntlProvider messages={enMessages} locale="en" defaultLocale="en">
       <StaticRouter location="/">
-        <Story />
+        <div className="eea">
+          <Story />
+        </div>
       </StaticRouter>
     </IntlProvider>
   ),
