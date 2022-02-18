@@ -23,7 +23,7 @@ const customMobileViewports = {
 
 const customDesktopViewports = {
   small_laptop: {
-    name: 'small laptop',
+    name: 'Small laptop',
     styles: {
       height: '1024px',
       width: '768px',
@@ -31,7 +31,7 @@ const customDesktopViewports = {
     type: 'desktop',
   },
   laptop: {
-    name: 'laptop',
+    name: 'Laptop',
     styles: {
       height: '1280px',
       width: '800px',
@@ -39,7 +39,7 @@ const customDesktopViewports = {
     type: 'desktop',
   },
   widescreen: {
-    name: 'widescreen',
+    name: 'Widescreen',
     styles: {
       height: '1366px',
       width: '768px',
