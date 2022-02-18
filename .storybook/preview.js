@@ -8,9 +8,7 @@ import enMessages from '~/../locales/en.json';
 
 import '@eeacms/volto-eea-design-system/semantic.less';
 import '@plone/volto/../theme/themes/pastanaga/extras/extras.less';
-import {
-  MINIMAL_VIEWPORTS
-} from '@storybook/addon-viewport';
+import { MINIMAL_VIEWPORTS } from '@storybook/addon-viewport';
 
 const customMobileViewports = {
   galaxys9: {
@@ -24,27 +22,27 @@ const customMobileViewports = {
 };
 
 const customDesktopViewports = {
-  tablet: {
-    name: '1024x768',
+  small_laptop: {
+    name: 'small laptop',
     styles: {
-      height: '768px',
-      width: '1024px',
+      height: '1024px',
+      width: '768px',
     },
     type: 'desktop',
   },
   laptop: {
-    name: '1280x800',
+    name: 'laptop',
     styles: {
-      height: '800px',
-      width: '1280px',
+      height: '1280px',
+      width: '800px',
     },
     type: 'desktop',
   },
   widescreen: {
-    name: '1366x768',
+    name: 'widescreen',
     styles: {
-      height: '768px',
-      width: '1366px',
+      height: '1366px',
+      width: '768px',
     },
     type: 'desktop',
   },
