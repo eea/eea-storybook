@@ -22,7 +22,8 @@
   ],
   "addons": [
     "@eeacms/volto-eea-design-system",
-    "@eeacms/volto-eea-kitkat"
+    "@eeacms/volto-eea-kitkat",
+    "@eeacms/volto-eea-website-theme"
   ],
   "jest": {
     "modulePathIgnorePatterns": [
@@ -124,6 +125,7 @@
   "dependencies": {
     "@eeacms/volto-eea-design-system": "*",
     "@eeacms/volto-eea-kitkat": "*",
+    "@eeacms/volto-eea-website-theme": "*",
     "@plone/volto": "14.3.0",
     "@storybook/addon-a11y": "^6.4.9",
     "@storybook/addon-cssresources": "6.2.9",
