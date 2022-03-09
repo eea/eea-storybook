@@ -21,8 +21,8 @@
     "src/addons/*"
   ],
   "addons": [
-    "@eeacms/volto-eea-design-system",
     "@eeacms/volto-eea-kitkat",
+    "@eeacms/volto-eea-design-system",
     "@eeacms/volto-eea-website-theme"
   ],
   "jest": {
