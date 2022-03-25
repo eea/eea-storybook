@@ -90,6 +90,12 @@
             ],
             "@eeacms/volto-eea-website-theme": [
                 "addons/volto-eea-website-theme/src"
+            ],
+            "@eeacms/volto-blockquote": [
+                "addons/volto-blockquote/src"
+            ],
+            "@eeacms/volto-statistic-block": [
+                "addons/volto-statistic-block/src"
             ]
         },
         "baseUrl": "src"
