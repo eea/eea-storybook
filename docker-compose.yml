@@ -22,7 +22,7 @@ services:
     ports:
       - '${BACKEND:-8080}:8080'
     environment:
-      CORS_ALLOW_ORIGIN: 'http://localhost:3000,http://localhost:${FRONTEND:-4000},http://192.168.30.188:3000,http://192.168.30.188:3001,http://localhost:3001'
+      CORS_ALLOW_ORIGIN: 'http://localhost:3000,http://localhost:${FRONTEND:-4000},http://192.168.30.55:3000,http://192.168.30.55:3001,http://localhost:3001'
       SITE: 'Plone'
       PROFILES: 'plone.volto:default-homepage'
       ADDONS: 'plone.volto eea.kitkat plone.rest plone.restapi'
