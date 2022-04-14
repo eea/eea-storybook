@@ -5,8 +5,7 @@ const makeLoaderFinder = require('razzle-dev-utils/makeLoaderFinder');
 const fileLoaderFinder = makeLoaderFinder('file-loader');
 
 const projectRootPath = path.resolve('.');
-const createAddonsLoader = require('@plone/volto/create-addons-loader');
-const lessPlugin = require('@plone/volto/webpack-less-plugin');
+const lessPlugin = require('@plone/volto/webpack-plugins/webpack-less-plugin');
 
 const createConfig = require('../node_modules/razzle/config/createConfigAsync.js');
 const razzleConfig = require(path.join(projectRootPath, 'razzle.config.js'));
@@ -32,14 +31,20 @@ const SVGLOADER = {
 };
 
 module.exports = {
-  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
+  stories: ['../src/addons/volto-eea-design-system/src/ui/**/*.stories.mdx', '../src/addons/volto-eea-design-system/src/ui/**/*.stories.@(js|jsx)'],
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-a11y',
     '@whitespace/storybook-addon-html',
-    // '@storybook/preset-scss',
   ],
+  features: {
+    storyStoreV7: true,
+    buildStoriesJson: true,
+    emotionAlias: false,
+    postcss: false,
+    modernInlineRender: true
+  },
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
     // You can change the configuration based on that.
