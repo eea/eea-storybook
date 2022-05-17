@@ -1,9 +1,6 @@
 {
     "compilerOptions": {
         "paths": {
-            "volto-slate": [
-                "addons/volto-slate/src"
-            ],
             "@eeacms/volto-matomo": [
                 "addons/volto-matomo/src"
             ],
@@ -82,20 +79,35 @@
             "@eeacms/volto-eea-kitkat": [
                 "addons/volto-eea-kitkat/src"
             ],
-            "@eeacms/volto-ims-theme": [
-                "addons/volto-ims-theme/src"
-            ],
             "@eeacms/volto-eea-design-system": [
                 "addons/volto-eea-design-system/src"
             ],
             "@eeacms/volto-eea-website-theme": [
                 "addons/volto-eea-website-theme/src"
             ],
-            "@eeacms/volto-blockquote": [
-                "addons/volto-blockquote/src"
+            "@eeacms/volto-eea-website-policy": [
+                "addons/volto-eea-website-policy/src"
+            ],
+            "@eeacms/volto-quote-block": [
+                "addons/volto-quote-block/src"
             ],
             "@eeacms/volto-statistic-block": [
                 "addons/volto-statistic-block/src"
+            ],
+            "@eeacms/volto-timeline-block": [
+                "addons/volto-timeline-block/src"
+            ],
+            "@eeacms/volto-slate-label": [
+                "addons/volto-slate-label/src"
+            ],
+            "@eeacms/volto-tags-block": [
+                "addons/volto-tags-block/src"
+            ],
+            "@eeacms/volto-description-block": [
+                "addons/volto-description-block/src"
+            ],
+            "volto-slate": [
+                "addons/volto-slate/src"
             ]
         },
         "baseUrl": "src"
