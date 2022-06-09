@@ -21,13 +21,17 @@
     "src/addons/*"
   ],
   "addons": [
-    "@eeacms/volto-eea-kitkat",
     "@eeacms/volto-quote-block",
     "@eeacms/volto-statistic-block",
     "@eeacms/volto-tags-block",
     "@eeacms/volto-timeline-block",
-    "@eeacms/volto-slate-label",
     "@eeacms/volto-description-block",
+    "@eeacms/volto-call-to-action-block",
+    "@eeacms/volto-eea-kitkat",
+    "@eeacms/volto-slate-label",
+    "@eeacms/volto-hero-block",
+    "@eeacms/volto-eea-design-system",
+    "@eeacms/volto-eea-website-theme",
     "@eeacms/volto-eea-design-system",
     "@eeacms/volto-eea-website-theme"
   ],
@@ -132,7 +136,7 @@
     "@eeacms/volto-eea-design-system": "*",
     "@eeacms/volto-eea-kitkat": "*",
     "@eeacms/volto-eea-website-theme": "*",
-    "@plone/volto": "15.11.0",
+    "@plone/volto": "plone/volto#hero",
     "@storybook/addon-a11y": "^6.4.9",
     "@storybook/addon-cssresources": "6.2.9",
     "@storybook/html": "^6.4.9",
