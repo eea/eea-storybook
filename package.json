@@ -136,7 +136,7 @@
     "@eeacms/volto-eea-design-system": "*",
     "@eeacms/volto-eea-kitkat": "*",
     "@eeacms/volto-eea-website-theme": "*",
-    "@plone/volto": "plone/volto#hero",
+    "@plone/volto": "16.0.0-alpha.7",
     "@storybook/addon-a11y": "^6.4.9",
     "@storybook/addon-cssresources": "6.2.9",
     "@storybook/html": "^6.4.9",
