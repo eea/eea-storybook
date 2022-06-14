@@ -2184,25 +2184,6 @@
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.6.tgz#d5e0706cf8c6acd8c6032f8d54070af261bbbb2f"
   integrity sha512-ws57AidsDvREKrZKYffXddNkyaF14iHNHm8VQnZH6t99E8gczjNN0GpvcGny0imC80yQ0tHz1xVUKk/KFQSUyA==
 
-"@eeacms/volto-block-image-cards@0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@eeacms/volto-block-image-cards/-/volto-block-image-cards-0.6.0.tgz#7bd64f72bb76c57ac94e8da6b6f30b8f85f96058"
-  integrity sha512-gTCqjmsdd09PYhVShmFdjsdZNR9wuPEPiFC1bVta2mUWDEMkDpFF6SCk/Dt4xBSOQfM6iU65r9Oce5NDtxUfmw==
-  dependencies:
-    "@eeacms/volto-block-style" "*"
-    react-lazy-load-image-component "^1.4.0"
-    react-resize-detector "6.7.6"
-    react-slick "^0.24.0"
-    slick-carousel "^1.8.1"
-    volto-slate "*"
-
-"@eeacms/volto-widget-dataprovenance@0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@eeacms/volto-widget-dataprovenance/-/volto-widget-dataprovenance-0.1.1.tgz#50c0f6bebca634b23165b1c54c0c0f6c69f4d24b"
-  integrity sha512-B0bostiTBaSEOUn9D3n1p2P5HnjVPypg2AVsweOndqyr+ldhE4+QPkFFdM93lEwKw9sggNGW9yvYrxBl/kSqyg==
-  dependencies:
-    "@plone/scripts" "*"
-
 "@emotion/cache@^10.0.27":
   version "10.0.29"
   resolved "https://registry.yarnpkg.com/@emotion/cache/-/cache-10.0.29.tgz#87e7e64f412c060102d589fe7c6dc042e6f9d1e0"
