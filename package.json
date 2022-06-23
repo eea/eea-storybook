@@ -21,19 +21,19 @@
     "src/addons/*"
   ],
   "addons": [
+    "@kitconcept/volto-blocks-grid",
     "@eeacms/volto-quote-block",
     "@eeacms/volto-statistic-block",
     "@eeacms/volto-tags-block",
     "@eeacms/volto-timeline-block",
     "@eeacms/volto-description-block",
     "@eeacms/volto-call-to-action-block",
+    "@eeacms/volto-hero-block",
     "@eeacms/volto-eea-kitkat",
     "@eeacms/volto-slate-label",
-    "@eeacms/volto-hero-block",
     "@eeacms/volto-eea-design-system",
     "@eeacms/volto-eea-website-theme",
-    "@eeacms/volto-eea-design-system",
-    "@eeacms/volto-eea-website-theme"
+    "@eeacms/volto-eea-website-policy"
   ],
   "jest": {
     "modulePathIgnorePatterns": [
@@ -136,6 +136,7 @@
     "@eeacms/volto-eea-design-system": "*",
     "@eeacms/volto-eea-kitkat": "*",
     "@eeacms/volto-eea-website-theme": "*",
+    "@kitconcept/volto-blocks-grid": "3.0.2",
     "@plone/volto": "16.0.0-alpha.7",
     "@storybook/addon-a11y": "^6.4.9",
     "@storybook/addon-cssresources": "6.2.9",
