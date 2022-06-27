@@ -2196,6 +2196,14 @@
     slick-carousel "^1.8.1"
     volto-slate "*"
 
+"@eeacms/volto-listing-block@0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@eeacms/volto-listing-block/-/volto-listing-block-0.4.0.tgz#f5cc3ec17e43c427e22363fb2daf6796e4137b0a"
+  integrity sha512-21L1KXZE06okU6miz1XAW+u+xUMJown+a0p2hFjRf7ixvAXqSol24N13khXChfE8VoHn+nZSk8C+FXRmwp2sBQ==
+  dependencies:
+    react-slick "0.29.0"
+    slick-carousel "1.8.1"
+
 "@eeacms/volto-widget-dataprovenance@0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@eeacms/volto-widget-dataprovenance/-/volto-widget-dataprovenance-0.1.1.tgz#50c0f6bebca634b23165b1c54c0c0f6c69f4d24b"
@@ -2683,10 +2691,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@kitconcept/volto-blocks-grid@3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@kitconcept/volto-blocks-grid/-/volto-blocks-grid-3.0.2.tgz#c23549eac1d195a5911181914c70e4dd4b4f7f8c"
-  integrity sha512-EW+c3Gu764Ay01Z6ZTXDRqzYkhrscdQA8V9TbTaTg0qIMDMTIrDDeONohzAX8Cb1hMk/cGV8y/6Nf2wc9tIy2Q==
+"@kitconcept/volto-blocks-grid@3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@kitconcept/volto-blocks-grid/-/volto-blocks-grid-3.1.0.tgz#6808a8e9642f31624554045c0b3a265b31e9eed6"
+  integrity sha512-VSZ46t7A0U05tMAFE7/fTin1Bp5pogjyjzVUjAuiSALpjQhlSz2z8tihmDLTBMOvgShrcnbZTIHMiLBlRDKraA==
   dependencies:
     "@plone/scripts" "*"
 

@@ -115,6 +115,9 @@
             "@eeacms/volto-widget-dataprovenance": [
                 "addons/volto-widget-dataprovenance/src"
             ],
+            "@kitconcept/volto-blocks-grid": [
+                "addons/volto-blocks-grid/src"
+            ],
             "volto-slate": [
                 "addons/volto-slate/src"
             ]
