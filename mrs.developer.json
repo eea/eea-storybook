@@ -311,7 +311,6 @@
     "develop": true,
     "path": "src"
   },
-
   "volto-blocks-grid": {
     "url": "https://github.com/kitconcept/volto-blocks-grid.git",
     "https": "https://github.com/kitconcept/volto-blocks-grid.git",
