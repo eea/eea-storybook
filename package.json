@@ -21,7 +21,6 @@
     "src/addons/*"
   ],
   "addons": [
-    "@kitconcept/volto-blocks-grid",
     "@eeacms/volto-quote-block",
     "@eeacms/volto-statistic-block",
     "@eeacms/volto-tags-block",
