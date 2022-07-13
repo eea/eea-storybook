@@ -134,6 +134,7 @@
   },
   "dependencies": {
     "@eeacms/volto-eea-design-system": "*",
+    "@eeacms/volto-quote-block": "0.3.2",
     "@eeacms/volto-eea-kitkat": "*",
     "@eeacms/volto-eea-website-theme": "*",
     "@kitconcept/volto-blocks-grid": "3.1.0",
