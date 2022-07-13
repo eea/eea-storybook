@@ -136,7 +136,6 @@
     "@eeacms/volto-quote-block": "0.3.2",
     "@eeacms/volto-eea-kitkat": "*",
     "@eeacms/volto-eea-website-theme": "*",
-    "@kitconcept/volto-blocks-grid": "3.1.0",
     "@plone/volto": "16.0.0-alpha.7",
     "@storybook/addon-a11y": "^6.4.9",
     "@storybook/addon-cssresources": "6.2.9",
