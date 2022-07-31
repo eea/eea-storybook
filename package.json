@@ -2,7 +2,7 @@
   "name": "volto-kitkat-frontend",
   "description": "A Volto-powered Plone frontend",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "scripts": {
     "start": "razzle start",
     "postinstall": "yarn omelette && yarn patches",
