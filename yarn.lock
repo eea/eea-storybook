@@ -1445,6 +1445,14 @@
     react-slick "0.29.0"
     slick-carousel "1.8.1"
 
+"@eeacms/volto-listing-block@0.4.4":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@eeacms/volto-listing-block/-/volto-listing-block-0.4.4.tgz#583988ccfa9a218ee76bd800c4c669734e7902e7"
+  integrity sha512-jH4dInNPyz5jtvxSlZ/WCV4IpZcboI88iFvO+WNaQ8uPkzperkR/26xfMHRjhOH1dBRSmfKXuyWqv/LPmxPCLQ==
+  dependencies:
+    react-slick "0.29.0"
+    slick-carousel "1.8.1"
+
 "@eeacms/volto-matomo@2.0.9":
   version "2.0.9"
   resolved "https://registry.yarnpkg.com/@eeacms/volto-matomo/-/volto-matomo-2.0.9.tgz#b5d4811f54df5fe731244ced5b49666550cddbf6"
