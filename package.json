@@ -153,7 +153,7 @@
     "not dead"
   ],
   "engines": {
-    "node": "^16"
+    "node": "^14 || ^16"
   },
   "dependencies": {
     "@eeacms/volto-call-to-action-block": "0.2.4",
