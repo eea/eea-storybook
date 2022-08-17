@@ -1333,10 +1333,10 @@
   resolved "https://registry.yarnpkg.com/@eeacms/volto-call-to-action-block/-/volto-call-to-action-block-0.2.4.tgz#7d0e5c8616aa29f76e8a89a06589f26943055606"
   integrity sha512-YzxwW9a4vgTWz2XxZBHTyrPJ1E99IIErqFt7EbiUi7cX6VGcy0jsPu0Xg/MK5hJxG3rJegOZcKuq6WJmDytWdw==
 
-"@eeacms/volto-columns-block@4.5.1":
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/@eeacms/volto-columns-block/-/volto-columns-block-4.5.1.tgz#af5226fceb54481eefc6d8f956567ccfc7d23b76"
-  integrity sha512-zAKK2B8IwZTGJQz5jqyUjeUX+a74lZGYGzGdoLHkJe7hN/oE0fkb+0kyS4yXOLKA1h8pFUXNX6dYneFuAVAaRA==
+"@eeacms/volto-columns-block@4.5.3":
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/@eeacms/volto-columns-block/-/volto-columns-block-4.5.3.tgz#b7bd727940c46829d089fddb08d3be6f543f9735"
+  integrity sha512-8NoaqS6ydRatrSAOuGhv466mJgp/imqVXqy4lujTn2ULRHfzH6kMbZQYO+lu/kvTbgDOiOTmFjARRqGamVaQiA==
   dependencies:
     react-color "~2.19.3"
 
