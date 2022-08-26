@@ -1382,10 +1382,10 @@
     slate "^0.71.0"
     slate-react "^0.71.0"
 
-"@eeacms/volto-group-block@4.3.6":
-  version "4.3.6"
-  resolved "https://registry.yarnpkg.com/@eeacms/volto-group-block/-/volto-group-block-4.3.6.tgz#545f2bce0be9770210b6f8eba3376fddb43af1b6"
-  integrity sha512-A6VdwFppz2+v2ft7ZsAkXYJwxBLZ941xnR3Uz8JC6fouQd0IXTM5BQER69DTEm8cs/I7yc3gQMYte90HCXbIJQ==
+"@eeacms/volto-group-block@4.3.8":
+  version "4.3.8"
+  resolved "https://registry.yarnpkg.com/@eeacms/volto-group-block/-/volto-group-block-4.3.8.tgz#d7d16fe17745cb08bf7f625c27d021e854281bb4"
+  integrity sha512-aRvREccetNiqIeOLvYH0sUAoQgBeuS4J3K0pWQeEwGw2i1znvYMvgZaWVNcck84RiLsMOHVnuafSGYvzR4RkZA==
 
 "@eeacms/volto-matomo@2.0.9":
   version "2.0.9"
