@@ -154,7 +154,7 @@
     "not dead"
   ],
   "engines": {
-    "node": "^16"
+    "node": "^14 || ^16"
   },
   "dependencies": {
     "@babel/helper-create-class-features-plugin": "^7.18.9",
