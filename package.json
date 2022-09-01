@@ -168,7 +168,7 @@
     "@eeacms/volto-corsproxy": "2.1.6",
     "@eeacms/volto-depiction": "0.1.6",
     "@eeacms/volto-description-block": "0.3.1",
-    "@eeacms/volto-eea-website-theme": "0.6.16",
+    "@eeacms/volto-eea-website-theme": "0.7.1",
     "@eeacms/volto-group-block": "4.3.8",
     "@eeacms/volto-matomo": "2.0.9",
     "@eeacms/volto-metadata-block": "4.0.8",

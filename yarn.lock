@@ -1372,10 +1372,10 @@
     react-slick "^0.28.1"
     remixicon "2.5.0"
 
-"@eeacms/volto-eea-website-theme@0.6.16":
-  version "0.6.16"
-  resolved "https://registry.yarnpkg.com/@eeacms/volto-eea-website-theme/-/volto-eea-website-theme-0.6.16.tgz#eb2cc3948be1d4ca27b495d48f9f199b4af2a43d"
-  integrity sha512-g7H43ke+k/zg6e9SD3cOXu5Njatzw+aphkWp9hS9LLPt/w5OZnYxgRxgJnBkrgQvf57JdXPUdMqMRpNKwlKWvA==
+"@eeacms/volto-eea-website-theme@0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@eeacms/volto-eea-website-theme/-/volto-eea-website-theme-0.7.1.tgz#dfd8441bc20dcb97d1c5f7a85a1d1b220fb8d8ad"
+  integrity sha512-dhb1rBX10lTp0LYnf72HybZr7nSG4Xzxc5YAybbTwrkBtXUXo511IiSSdKmvpzeNytuvSduHWUu9F5rwk8WhiQ==
   dependencies:
     "@eeacms/volto-eea-design-system" "*"
     "@plone/scripts" "*"
