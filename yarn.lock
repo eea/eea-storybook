@@ -1454,10 +1454,10 @@
   resolved "https://registry.yarnpkg.com/@eeacms/volto-taxonomy/-/volto-taxonomy-2.0.6.tgz#83f17f7db23c1227f07981d5b00dc3b98d1b9081"
   integrity sha512-iJQ7ATw2gl5PEi4zb7+Cs4XsFxG32WyaDheoln0zH/MzUD9ezHeZTNQD5vIaRn63Eomn8PRo92cqYcgJTiBL/Q==
 
-"@eeacms/volto-widget-dataprovenance@0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@eeacms/volto-widget-dataprovenance/-/volto-widget-dataprovenance-0.1.4.tgz#e58354e2a82d47b793e841644db7e305832ae644"
-  integrity sha512-zr1H49FbdVA7njH1YHQtqIEm1GKyTwFGWO1MxFli7i3GVvvJROfmZvoCJx3MKiIz5Iy9Bz1caCFBgWvstgl+Zw==
+"@eeacms/volto-widget-dataprovenance@0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@eeacms/volto-widget-dataprovenance/-/volto-widget-dataprovenance-0.1.5.tgz#801c6c9f40e6f67a0ec35641f602f3961dc477c3"
+  integrity sha512-BPBTY2JMC8kvcvbiIyCduGvOXUlXDLxDIupCj0hpqJN0LSeLz8HiV5EUQQagCmt4CQK5kRlxPFePnfBljoxb6g==
   dependencies:
     "@plone/scripts" "*"
 
