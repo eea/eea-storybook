@@ -21,6 +21,7 @@
     "src/addons/*"
   ],
   "addons": [
+    "@kitconcept/volto-blocks-grid",
     "@eeacms/volto-matomo",
     "@eeacms/volto-sentry-rancher-config",
     "@eeacms/volto-corsproxy",
@@ -190,6 +191,7 @@
     "@storybook/addon-cssresources": "6.2.9",
     "@storybook/html": "^6.4.9",
     "@whitespace/storybook-addon-html": "^5.0.0",
+    "@kitconcept/volto-blocks-grid": "5.0",
     "volto-slate": "6.3.0"
   },
   "devDependencies": {
