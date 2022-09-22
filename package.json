@@ -192,7 +192,7 @@
     "@storybook/addon-cssresources": "6.2.9",
     "@storybook/html": "^6.4.9",
     "@whitespace/storybook-addon-html": "^5.0.0",
-    "volto-slate": "6.3.0"
+    "volto-slate": "6.4.0"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^6.3.0",
