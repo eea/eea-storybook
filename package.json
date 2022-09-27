@@ -159,7 +159,7 @@
   },
   "dependencies": {
     "@babel/helper-create-class-features-plugin": "^7.18.9",
-    "@eeacms/volto-accordion-block": "3.5.0",
+    "@eeacms/volto-accordion-block": "4.0.0",
     "@eeacms/volto-banner": "2.2.1",
     "@eeacms/volto-block-divider": "3.0.2",
     "@eeacms/volto-block-style": "3.7.0",

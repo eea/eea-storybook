@@ -1294,10 +1294,10 @@
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.6.tgz#d5e0706cf8c6acd8c6032f8d54070af261bbbb2f"
   integrity sha512-ws57AidsDvREKrZKYffXddNkyaF14iHNHm8VQnZH6t99E8gczjNN0GpvcGny0imC80yQ0tHz1xVUKk/KFQSUyA==
 
-"@eeacms/volto-accordion-block@3.5.0":
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/@eeacms/volto-accordion-block/-/volto-accordion-block-3.5.0.tgz#67a0c17b03a2f9c0c2c1af5213639aa8fa67cbf2"
-  integrity sha512-n+bFhG0EiQ89cz+W5oSYfFOxESI0VNwNkoAIqshWz7Y7ZObC/jlMCn+KOWHetj2kYTuSmLWMEADxDlhHRo/qSw==
+"@eeacms/volto-accordion-block@4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@eeacms/volto-accordion-block/-/volto-accordion-block-4.0.0.tgz#3bb6d390972db0d525f09afc72e66015b2c8fe72"
+  integrity sha512-K85MH+iERFuLiktJ5oMYjIkZGn5Qsq7XOdJTn4rsd+dbYd0it/PmtlR5NVU/kck26+bh2+CB+TE/Jz+fadWe3g==
 
 "@eeacms/volto-banner@2.2.1":
   version "2.2.1"
