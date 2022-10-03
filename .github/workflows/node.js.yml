@@ -32,6 +32,7 @@ jobs:
     - name: Push Storybook build changes
       run: |
            npm install -g mrs-developer
+           yarn policies set-version 1.18.0
            yarn develop
            yarn install
            yarn build-storybook
