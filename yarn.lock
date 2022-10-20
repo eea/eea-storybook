@@ -1319,10 +1319,12 @@
     "@eeacms/volto-resize-helper" "*"
     react-color "~2.18.1"
 
-"@eeacms/volto-block-toc@3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@eeacms/volto-block-toc/-/volto-block-toc-3.0.1.tgz#0f020dac44908264a7554c8229e387026b94ea56"
-  integrity sha512-bDXDv47xfAK+GCd/cC4ccQpZyd4+EolRl+AX+w8FMZElix8TKSZuBaKJ+r1hLduNN54dO1gu5oS8biwf5VGGAQ==
+"@eeacms/volto-block-toc@3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@eeacms/volto-block-toc/-/volto-block-toc-3.0.2.tgz#7048a5438e62eb93c3c93ab7c9c6810a0669fb96"
+  integrity sha512-QFbV+hzR4tMXm8IhB3pAH/IIQ2ip76xgTACRVxGn+h8rhK+VAYGBnQ9mM4oIgWi1OOfloI0avwRuZJy7agiUBg==
+  dependencies:
+    smoothscroll-polyfill "^0.4.4"
 
 "@eeacms/volto-call-to-action-block@0.2.4":
   version "0.2.4"
@@ -18280,6 +18282,11 @@ slick-carousel@^1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/slick-carousel/-/slick-carousel-1.8.1.tgz#a4bfb29014887bb66ce528b90bd0cda262cc8f8d"
   integrity sha512-XB9Ftrf2EEKfzoQXt3Nitrt/IPbT+f1fgqBdoxO3W/+JYvtEOW6EgxnWfr9GH6nmULv7Y2tPmEX3koxThVmebA==
+
+smoothscroll-polyfill@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/smoothscroll-polyfill/-/smoothscroll-polyfill-0.4.4.tgz#3a259131dc6930e6ca80003e1cb03b603b69abf8"
+  integrity sha512-TK5ZA9U5RqCwMpfoMq/l1mrH0JAR7y7KRvOBx0n2869aLxch+gT9GhN3yUfjiw+d/DiF1mKo14+hd62JyMmoBg==
 
 snapdragon-node@^2.0.1:
   version "2.1.1"
