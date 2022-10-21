@@ -1319,10 +1319,10 @@
     "@eeacms/volto-resize-helper" "*"
     react-color "~2.18.1"
 
-"@eeacms/volto-block-toc@3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@eeacms/volto-block-toc/-/volto-block-toc-3.0.2.tgz#7048a5438e62eb93c3c93ab7c9c6810a0669fb96"
-  integrity sha512-QFbV+hzR4tMXm8IhB3pAH/IIQ2ip76xgTACRVxGn+h8rhK+VAYGBnQ9mM4oIgWi1OOfloI0avwRuZJy7agiUBg==
+"@eeacms/volto-block-toc@3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@eeacms/volto-block-toc/-/volto-block-toc-3.0.3.tgz#da65e6b480ef507e49578aecdee8ddc54f1817dd"
+  integrity sha512-2nYpsdw9R7xwSzi3uwClfLbv64H54Lx3NwyAtPUNT1zjA3ow8ZDjSI+G2mmGD1mMnDwR3NzUQVWtJuKRLC2x2g==
   dependencies:
     smoothscroll-polyfill "^0.4.4"
 
