@@ -1423,13 +1423,12 @@
     "@eeacms/volto-widgets-view" "*"
     volto-slate "*"
 
-"@eeacms/volto-slate-zotero@4.0.5":
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/@eeacms/volto-slate-zotero/-/volto-slate-zotero-4.0.5.tgz#d49cb0a1c4ba0425418d1780083e871a9c4e3cfe"
-  integrity sha512-SVRTmY46kW8Y6rYfNMSRTdFabV+EWl19KWEKZkFBZQ1SvoiFYoHLYfsv/1ShQu4OMu7gP4bPYnKw1H5jgg/Sfg==
+"@eeacms/volto-slate-zotero@5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@eeacms/volto-slate-zotero/-/volto-slate-zotero-5.0.0.tgz#94b903531d73f8adef3803872b54c2740a03f935"
+  integrity sha512-tTTQbd4DfzUcWqxbs5sWrqQPz/Gw+xvjN3p0bNWwte7jXNPyxpBSdmwTH92LblERCM5iYteI1KI/jcnM363Ddw==
   dependencies:
     "@eeacms/volto-slate-footnote" "*"
-    volto-slate "*"
 
 "@eeacms/volto-tabs-block@2.2.1":
   version "2.2.1"
