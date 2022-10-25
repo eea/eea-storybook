@@ -1415,13 +1415,12 @@
   resolved "https://registry.yarnpkg.com/@eeacms/volto-slate-footnote/-/volto-slate-footnote-6.0.1.tgz#262255fbef015b0b16695413c7733f2ba28e0807"
   integrity sha512-NEnhzZAT4aaftOyRWgoxeP5y4kQWMGSby5kGBL+rahQoiRacjjDW1PUQbHOZ9EzGpBnrnsbr14BCCGU2P6TDaw==
 
-"@eeacms/volto-slate-metadata-mentions@5.0.1":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@eeacms/volto-slate-metadata-mentions/-/volto-slate-metadata-mentions-5.0.1.tgz#d07ed511c2d53018e8839cecd5a281bac1fc869f"
-  integrity sha512-bITDx7U+2c2i7zVCa55xG9pVU8NhU0cHa8rsWGnHOJmwsX7rwMkjRJSDXrBpzPa+kXC4XL93i/MlpC9vKWe2aw==
+"@eeacms/volto-slate-metadata-mentions@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@eeacms/volto-slate-metadata-mentions/-/volto-slate-metadata-mentions-6.0.0.tgz#b1084edd48f4ae86fed6bf7ba13ee77424cca542"
+  integrity sha512-jb5whh2U/wluW/Zn/AjgmbPSxeuqhAyqCCtINzpLaAG+DUO2RDmixn1tFY/xlT7zlO1oQgXv0VdMCfoL0RA94w==
   dependencies:
     "@eeacms/volto-widgets-view" "*"
-    volto-slate "*"
 
 "@eeacms/volto-slate-zotero@5.0.1":
   version "5.0.1"
