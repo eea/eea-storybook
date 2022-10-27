@@ -1395,10 +1395,10 @@
   dependencies:
     "@eeacms/volto-widgets-view" "*"
 
-"@eeacms/volto-object-widget@*", "@eeacms/volto-object-widget@4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@eeacms/volto-object-widget/-/volto-object-widget-4.0.2.tgz#7f92eb6998e74b4a60bb874d054334265b5178d6"
-  integrity sha512-j4RdHxiobaRuLIaszl3S5ukED3VsWCmxl3pdUHG3Sib9L79XOBG6WPfCzNkNGaC0rfigkvAhp6ryuA/GLyAlTg==
+"@eeacms/volto-object-widget@*", "@eeacms/volto-object-widget@5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@eeacms/volto-object-widget/-/volto-object-widget-5.0.0.tgz#78d1b8f5985389fceff1504d773210b6e49d6f71"
+  integrity sha512-s8y+IddpS2t/gxKe1FeM/38eb2dKn3KH70zJ3b9IdCiP0f1WvlAHZNbW1yosVf03bCxxrqTfwqPH5XDN2U/cUA==
 
 "@eeacms/volto-resize-helper@*", "@eeacms/volto-resize-helper@1.0.0":
   version "1.0.0"
