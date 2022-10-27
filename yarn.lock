@@ -1400,10 +1400,10 @@
   resolved "https://registry.yarnpkg.com/@eeacms/volto-object-widget/-/volto-object-widget-4.0.2.tgz#7f92eb6998e74b4a60bb874d054334265b5178d6"
   integrity sha512-j4RdHxiobaRuLIaszl3S5ukED3VsWCmxl3pdUHG3Sib9L79XOBG6WPfCzNkNGaC0rfigkvAhp6ryuA/GLyAlTg==
 
-"@eeacms/volto-resize-helper@*", "@eeacms/volto-resize-helper@0.2.10":
-  version "0.2.10"
-  resolved "https://registry.yarnpkg.com/@eeacms/volto-resize-helper/-/volto-resize-helper-0.2.10.tgz#f58ecd866988444f3b0b855e30dde17431a25edf"
-  integrity sha512-kbCIIzvDeqO5otAJfIgzJkJzkZFUudoG49/e320QxQzZQFrGF/jUUk54J1qgl5RJpgIcJFvchTZMFLKx5KUJ+A==
+"@eeacms/volto-resize-helper@*", "@eeacms/volto-resize-helper@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@eeacms/volto-resize-helper/-/volto-resize-helper-1.0.0.tgz#bb18e7a862dbed0ef2b6ad15c221b7d86f59bfa0"
+  integrity sha512-wIrbH0ELOUKYsa+efwlCJzeX9UWrcY1OQCT9OhR9eb5Auba1w3JQazaqLt+Uu61nlpxk5OwjIRxtqFjHmUzAaw==
 
 "@eeacms/volto-sentry-rancher-config@2.1.6":
   version "2.1.6"
