@@ -1451,10 +1451,10 @@
   dependencies:
     "@plone/scripts" "*"
 
-"@eeacms/volto-widget-geolocation@4.0.6":
-  version "4.0.6"
-  resolved "https://registry.yarnpkg.com/@eeacms/volto-widget-geolocation/-/volto-widget-geolocation-4.0.6.tgz#d387f34e858fb1e7910c664842841a6326fa7f9d"
-  integrity sha512-/uzjIcdBoNH12DLKj6VTmmxvqXteAfSXr9wRxTaxPNMsNmMvPYiquLYc/T3apnkLPO3oefNS2Lkw//Ajo6SoTA==
+"@eeacms/volto-widget-geolocation@5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@eeacms/volto-widget-geolocation/-/volto-widget-geolocation-5.0.0.tgz#f7d16937d07a7160fbb3ec70c47507207d930cdd"
+  integrity sha512-CTlW3ad+0NBHWpvL7gpG4HkAdiZ7yOxPB/FVaJDvvrFgTRPzhnA9PIHp0oWOIK+6uCH3dBKVeM36WjrxdFiK1g==
   dependencies:
     "@eeacms/volto-corsproxy" "*"
     i18n-iso-countries "6.2.1"
