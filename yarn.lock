@@ -1405,10 +1405,10 @@
   resolved "https://registry.yarnpkg.com/@eeacms/volto-resize-helper/-/volto-resize-helper-1.0.0.tgz#bb18e7a862dbed0ef2b6ad15c221b7d86f59bfa0"
   integrity sha512-wIrbH0ELOUKYsa+efwlCJzeX9UWrcY1OQCT9OhR9eb5Auba1w3JQazaqLt+Uu61nlpxk5OwjIRxtqFjHmUzAaw==
 
-"@eeacms/volto-sentry-rancher-config@2.1.6":
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/@eeacms/volto-sentry-rancher-config/-/volto-sentry-rancher-config-2.1.6.tgz#1b924382914df02752d3fbe874ef2d5d637b4421"
-  integrity sha512-xEPxx+0Keb/in5x25jDdpHUMU4Lcm5sEMEJv7sIfgQ1ZXP8QlzsXMDJthSdJ7nsyf/pt3ZvHfIq6GuS5Rc7GmQ==
+"@eeacms/volto-sentry-rancher-config@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@eeacms/volto-sentry-rancher-config/-/volto-sentry-rancher-config-3.0.0.tgz#0696069c7bb80c2fbaec4e374f6508a4879f60ef"
+  integrity sha512-Y+i1q6/LJtC4h7YlhPAKzX4HFV8dpdyGiTS/bFre05oV36+hsxCqPKC6AWv6F8N6di6eE3TEuu5QDEopYmL8Ow==
 
 "@eeacms/volto-slate-footnote@*", "@eeacms/volto-slate-footnote@6.0.1":
   version "6.0.1"
