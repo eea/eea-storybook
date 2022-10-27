@@ -1469,10 +1469,10 @@
   resolved "https://registry.yarnpkg.com/@eeacms/volto-widget-toggle/-/volto-widget-toggle-2.2.7.tgz#782596854130e6bef6e64625fc3a0b10ad8e1379"
   integrity sha512-70G1nrTOyVtXenMDO/LGBIjm75+XBmzz/q5Ges5Iqk44s1rAFcjutqmc9BR+acfPIZZpvnnPhfUlEN8jf1GWmA==
 
-"@eeacms/volto-widgets-view@*", "@eeacms/volto-widgets-view@3.0.5":
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/@eeacms/volto-widgets-view/-/volto-widgets-view-3.0.5.tgz#a6b3480c7c0350d5ac10ed1aadd69256ca1f747b"
-  integrity sha512-2VgPsKP2oIP5o9gv54RyWSxlxOwVoQwCJmCpNWtLN2pPt0jIf5xzpUq4EOuEZFLWGKR0bBAQEYVkPenb3eDDZw==
+"@eeacms/volto-widgets-view@*", "@eeacms/volto-widgets-view@4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@eeacms/volto-widgets-view/-/volto-widgets-view-4.0.0.tgz#3619d1bc6501c2124b959233a297c9c64fb95413"
+  integrity sha512-hbLzVdrQ+SADKPq4iWnTW670eZ0gDZYXxv4yOdjwHwtesSodI0G93IntMyf937DYSNsk7WRLguNeMWiDenIjyA==
 
 "@emotion/cache@^10.0.27":
   version "10.0.29"
