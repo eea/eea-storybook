@@ -1462,10 +1462,10 @@
   resolved "https://registry.yarnpkg.com/@eeacms/volto-widget-temporal-coverage/-/volto-widget-temporal-coverage-4.0.6.tgz#b542e1daa8046e2769516c08b444a81c3f562293"
   integrity sha512-BIXiL2jDVLt64jIa97Xc4M51Hd6UHDrtm11MgJ26v+0o+T3Bz40uIKx57wv/M9N+0fK/WA0qojOz/d/+A9E6NQ==
 
-"@eeacms/volto-widget-toggle@2.2.7":
-  version "2.2.7"
-  resolved "https://registry.yarnpkg.com/@eeacms/volto-widget-toggle/-/volto-widget-toggle-2.2.7.tgz#782596854130e6bef6e64625fc3a0b10ad8e1379"
-  integrity sha512-70G1nrTOyVtXenMDO/LGBIjm75+XBmzz/q5Ges5Iqk44s1rAFcjutqmc9BR+acfPIZZpvnnPhfUlEN8jf1GWmA==
+"@eeacms/volto-widget-toggle@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@eeacms/volto-widget-toggle/-/volto-widget-toggle-3.0.0.tgz#7e1230a3d47d75b6300666f4936532fb4ab6111d"
+  integrity sha512-wS6gu6tVbY4jUqgU/43hOo6jNzPiNgOFfUy3XqIADfTWy3gVjkFN4iCvgxYaudb3iSRs0wfpIQW2iBn0mIw4bg==
 
 "@eeacms/volto-widgets-view@*", "@eeacms/volto-widgets-view@4.0.0":
   version "4.0.0"
