@@ -183,7 +183,7 @@
     "@eeacms/volto-taxonomy": "3.0.0",
     "@eeacms/volto-widget-dataprovenance": "0.2.0",
     "@eeacms/volto-widget-geolocation": "5.0.0",
-    "@eeacms/volto-widget-temporal-coverage": "4.0.6",
+    "@eeacms/volto-widget-temporal-coverage": "5.0.0",
     "@eeacms/volto-widget-toggle": "3.0.0",
     "@eeacms/volto-widgets-view": "4.0.0",
     "@kitconcept/volto-blocks-grid": "5.0",
