@@ -1384,10 +1384,10 @@
   dependencies:
     "@datapunt/matomo-tracker-react" "0.3.1"
 
-"@eeacms/volto-metadata-block@4.0.8":
-  version "4.0.8"
-  resolved "https://registry.yarnpkg.com/@eeacms/volto-metadata-block/-/volto-metadata-block-4.0.8.tgz#113a79de68bc6ae7eb9f633fd291793f1a78edfe"
-  integrity sha512-I0jTKyJDGTRtbemjAXjWB73mmEtEPX2zhfR72s+5s4d20IYilvSJpYxjIeF/0cPvr08sqcx9kngVM2DLT9jzKQ==
+"@eeacms/volto-metadata-block@5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@eeacms/volto-metadata-block/-/volto-metadata-block-5.0.0.tgz#dac18e00bddb40f0191906209771071d330614ff"
+  integrity sha512-mAq6N0NexG3gaOqhopF0peMos8ODI13OIJgnfM77NVT2p3+BR7pM+N7Z1TYZAOXtR2OJy0gWvgHQ39CoYRdHqA==
   dependencies:
     "@eeacms/volto-widgets-view" "*"
 
