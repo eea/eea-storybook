@@ -1326,10 +1326,10 @@
   dependencies:
     smoothscroll-polyfill "^0.4.4"
 
-"@eeacms/volto-call-to-action-block@0.2.4":
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/@eeacms/volto-call-to-action-block/-/volto-call-to-action-block-0.2.4.tgz#7d0e5c8616aa29f76e8a89a06589f26943055606"
-  integrity sha512-YzxwW9a4vgTWz2XxZBHTyrPJ1E99IIErqFt7EbiUi7cX6VGcy0jsPu0Xg/MK5hJxG3rJegOZcKuq6WJmDytWdw==
+"@eeacms/volto-call-to-action-block@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@eeacms/volto-call-to-action-block/-/volto-call-to-action-block-1.0.0.tgz#17ca13de4d7df19353690651f45a118f7b39cf1c"
+  integrity sha512-dHXt/7F5U985tPyMCd+aI/oF0ZDX74ZyfeERDgGhyLhbX+4knrIe9Gm/PPyFIteNEk4L8DMOE5t921Vh40WYZA==
 
 "@eeacms/volto-columns-block@4.5.3":
   version "4.5.3"
