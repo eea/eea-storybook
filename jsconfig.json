@@ -73,9 +73,6 @@
             "@eeacms/volto-block-style": [
                 "addons/volto-block-style/src"
             ],
-            "@eeacms/volto-eea-kitkat": [
-                "addons/volto-eea-kitkat/src"
-            ],
             "@eeacms/volto-eea-design-system": [
                 "addons/volto-eea-design-system/src"
             ],
@@ -117,9 +114,6 @@
             ],
             "@eeacms/volto-block-image-cards": [
                 "addons/volto-block-image-cards/src"
-            ],
-            "volto-slate": [
-                "addons/volto-slate/src"
             ]
         },
         "baseUrl": "src"
