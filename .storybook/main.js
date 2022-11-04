@@ -60,6 +60,7 @@ const defaultRazzleOptions = {
 };
 
 module.exports = {
+  // reactOptions: { legacyRootApi: true },
   stories: [
     '../src/addons/volto-eea-design-system/src/ui/**/*.stories.mdx',
     '../src/addons/volto-eea-design-system/src/ui/**/*.stories.@(js|jsx)',
@@ -81,6 +82,10 @@ module.exports = {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
     // You can change the configuration based on that.
     // 'PRODUCTION' is used when building the static version of storybook.
+    // Storybook 6.5 added support for React 18's new Root API, but fails to realize we
+    // arent using React 18 yet, so it fails when it can't find it.
+    // https://github.com/storybookjs/storybook/issues/18402
+    config.externals = ['react-dom/client'];
 
     // Make whatever fine-grained changes you need
     let baseConfig;
