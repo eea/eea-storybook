@@ -31,12 +31,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
 
-    # node install
-    - run: yarn
-
     - name: Push Storybook build changes
       run: |
            npm install -g mrs-developer
+           yarn
            yarn develop
            yarn install
            yarn build-storybook
