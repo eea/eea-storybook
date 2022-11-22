@@ -34,7 +34,6 @@ jobs:
     - name: Push Storybook build changes
       run: |
            npm install -g mrs-developer
-           yarn
            yarn develop
            yarn install
            yarn build-storybook
