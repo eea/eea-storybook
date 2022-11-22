@@ -145,7 +145,7 @@
     "@eeacms/volto-eea-design-system": "1.0.0-alpha.4"
   },
   "dependencies": {
-    "@plone/volto": "16.0.0-rc.3"
+    "@plone/volto": "16.0.0"
   },
   "devDependencies": {
     "@babel/helper-create-class-features-plugin": "^7.18.9",
