@@ -32,7 +32,7 @@ jobs:
         cache: 'yarn'
 
     # node install
-    - run: yarn --immutable
+    - run: yarn
 
     - name: Push Storybook build changes
       run: |
