@@ -164,7 +164,7 @@
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@loadable/babel-plugin":  "^5.13.2",
     "@kitconcept/volto-blocks-grid": "5.0",
-    "@plone/volto": "16.0.0-alpha.48",
+    "@plone/volto": "16.1.0",
     "@storybook/addon-a11y": "6.3.13",
     "@storybook/addon-cssresources": "6.2.9",
     "@storybook/html": "6.3.13",
