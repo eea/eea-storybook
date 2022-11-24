@@ -117,6 +117,12 @@
             ],
             "@eeacms/volto-eea-kitkat": [
                 "addons/volto-eea-kitkat/src"
+            ],
+            "@plone-collective/volto-sentry": [
+                "addons/volto-sentry/src"
+            ],
+            "volto-sentry": [
+                "addons/volto-subsites/src"
             ]
         },
         "baseUrl": "src"

@@ -13,27 +13,28 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
+    name: Build storybook
+    timeout-minutes: 10
     strategy:
       matrix:
         node-version: [16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         ref: ${{ github.head_ref }}
+
+    # node setup
     - name: Use Node.js ${{ matrix.node-version }} to build storybook website
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
+        cache: 'yarn'
+
     - name: Push Storybook build changes
       run: |
            npm install -g mrs-developer
-           yarn policies set-version 1.18.0
-           yarn develop
+           make develop
            yarn install
            yarn build-storybook
            git config user.name github-actions
