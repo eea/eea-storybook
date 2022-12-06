@@ -47,6 +47,7 @@
     "@eeacms/volto-banner",
     "@eeacms/volto-quote-block",
     "@eeacms/volto-statistic-block",
+    "@eeacms/volto-tabs-block",
     "@eeacms/volto-tags-block",
     "@eeacms/volto-timeline-block",
     "@eeacms/volto-description-block",
