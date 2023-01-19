@@ -54,6 +54,9 @@
     "@eeacms/volto-call-to-action-block",
     "@eeacms/volto-hero-block",
     "@eeacms/volto-slate-label",
+    "@eeacms/volto-searchlib",
+    "@eeacms/volto-globalsearch",
+    "@eeacms/volto-datahub",
     "@eeacms/volto-eea-design-system",
     "@eeacms/volto-eea-website-theme",
     "@eeacms/volto-eea-website-policy"

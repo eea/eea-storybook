@@ -123,6 +123,15 @@
             ],
             "volto-sentry": [
                 "addons/volto-subsites/src"
+            ],
+            "@eeacms/volto-searchlib": [
+                "addons/volto-searchlib/src"
+            ],
+            "@eeacms/volto-datahub": [
+                "addons/volto-datahub/src"
+            ],
+            "@eeacms/volto-globalsearch": [
+                "addons/volto-globalsearch/src"
             ]
         },
         "baseUrl": "src"
