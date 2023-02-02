@@ -29,6 +29,7 @@
     "@eeacms/volto-object-widget",
     "@eeacms/volto-widgets-view",
     "@eeacms/volto-widget-toggle",
+    "@eeacms/volto-widget-theme-picker",
     "@eeacms/volto-widget-temporal-coverage",
     "@eeacms/volto-widget-geolocation",
     "@eeacms/volto-widget-dataprovenance",

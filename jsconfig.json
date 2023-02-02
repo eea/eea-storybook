@@ -121,9 +121,6 @@
             "@plone-collective/volto-sentry": [
                 "addons/volto-sentry/src"
             ],
-            "volto-sentry": [
-                "addons/volto-subsites/src"
-            ],
             "@eeacms/volto-searchlib": [
                 "addons/volto-searchlib/src"
             ],
@@ -132,6 +129,12 @@
             ],
             "@eeacms/volto-globalsearch": [
                 "addons/volto-globalsearch/src"
+            ],
+            "@eeacms/volto-widget-theme-picker": [
+                "addons/volto-widget-theme-picker/src"
+            ],
+            "volto-sentry": [
+                "addons/volto-subsites/src"
             ]
         },
         "baseUrl": "src"

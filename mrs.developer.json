@@ -350,5 +350,13 @@
     "package": "@eeacms/volto-globalsearch",
     "path": "src",
     "branch": "develop"
+  },
+  "volto-widget-theme-picker": {
+    "develop": true,
+    "url": "git@github.com:eea/volto-widget-theme-picker.git",
+    "https": "https://github.com/eea/volto-widget-theme-picker.git",
+    "package": "@eeacms/volto-widget-theme-picker",
+    "path": "src",
+    "branch": "develop"
   }
 }
