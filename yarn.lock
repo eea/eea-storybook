@@ -3627,17 +3627,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kitconcept/volto-blocks-grid@npm:5.0":
-  version: 5.0.0
-  resolution: "@kitconcept/volto-blocks-grid@npm:5.0.0"
-  dependencies:
-    "@plone/scripts": "*"
-  peerDependencies:
-    "@plone/volto": ">=12.14.0"
-  checksum: 861e70816503072507bcb98e9a7a9f2fc8d124ffa3945214dfb71054fb11f160c984014c48f3d43b4ec964e763221e1672991a948c1f5e4c1fc0107fc53b8851
-  languageName: node
-  linkType: hard
-
 "@kwsites/file-exists@npm:^1.1.1":
   version: 1.1.1
   resolution: "@kwsites/file-exists@npm:1.1.1"
@@ -4260,9 +4249,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plone/volto@npm:16.4.0":
-  version: 16.4.0
-  resolution: "@plone/volto@npm:16.4.0"
+"@plone/volto@npm:16.8.0":
+  version: 16.8.0
+  resolution: "@plone/volto@npm:16.8.0"
   dependencies:
     "@babel/core": ^7.0.0
     "@babel/plugin-proposal-export-default-from": 7.18.9
@@ -4441,7 +4430,7 @@ __metadata:
     webpack-node-externals: 3.0.0
     xmlrpc: 1.3.2
     yarnhook: 0.5.1
-  checksum: 942ad59ef479bc94db54075318819d3422ba5809bd355ec45110baf1ef6d580fd6a7c0f5f4f5ba47b52bab16f98af75a92b9071eed7a285b039544cc2e3d87c3
+  checksum: 0dc7116c0ec03e488941d9b0f1cbee5b98ae3815bbed9e80849f24ced4091f09776e6105e6ebe6872f605d95570e8b1845a78c4fca8298653e517484b18b7846
   languageName: node
   linkType: hard
 
@@ -29272,9 +29261,8 @@ __metadata:
     "@babel/plugin-proposal-class-properties": ^7.12.1
     "@babel/plugin-proposal-export-default-from": ^7.18.10
     "@babel/plugin-proposal-throw-expressions": ^7.18.6
-    "@kitconcept/volto-blocks-grid": 5.0
     "@loadable/babel-plugin": ^5.13.2
-    "@plone/volto": 16.4.0
+    "@plone/volto": 16.8.0
     "@storybook/addon-a11y": 6.3.13
     "@storybook/addon-actions": 6.3.13
     "@storybook/addon-controls": 6.3.13
