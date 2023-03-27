@@ -1,5 +1,5 @@
 import { create } from '@storybook/theming';
-import logo from '@eeacms/volto-eea-design-system/theme/themes/eea/assets/images/EEA_Logo_Vertical.png';
+import logo from '@eeacms/volto-eea-design-system/theme/themes/eea/assets/images/eea-logo.png';
 
 export default create({
   base: 'light',
