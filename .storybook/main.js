@@ -121,6 +121,9 @@ module.exports = {
     // work) since it needs to go first
     config.module.rules.unshift(SVGLOADER);
     const fileLoader = config.module.rules.find(fileLoaderFinder);
+    // add vtt to file loader
+    fileLoader.test = /\.(svg|ico|jpg|jpeg|png|apng|gif|eot|otf|webp|ttf|woff|woff2|cur|ani|pdf|vtt)(\?.*)?$/;
+
     fileLoader.exclude = [/\.(config|variables|overrides)$/, /icons\/.*\.svg$/];
     config.plugins.unshift(
       new webpack.DefinePlugin({
