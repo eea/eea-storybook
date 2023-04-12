@@ -79,9 +79,6 @@
             "@eeacms/volto-eea-website-theme": [
                 "addons/volto-eea-website-theme/src"
             ],
-            "@eeacms/volto-eea-website-policy": [
-                "addons/volto-eea-website-policy/src"
-            ],
             "@eeacms/volto-quote-block": [
                 "addons/volto-quote-block/src"
             ],
@@ -133,14 +130,14 @@
             "@eeacms/volto-widget-theme-picker": [
                 "addons/volto-widget-theme-picker/src"
             ],
-            "volto-sentry": [
-                "addons/volto-subsites/src"
-            ],
             "@eeacms/volto-anchors": [
                 "addons/volto-anchors/src"
             ],
             "@eeacms/volto-nextcloud-video-block": [
                 "addons/volto-nextcloud-video-block/src"
+            ],
+            "volto-sentry": [
+                "addons/volto-subsites/src"
             ]
         },
         "baseUrl": "src"
