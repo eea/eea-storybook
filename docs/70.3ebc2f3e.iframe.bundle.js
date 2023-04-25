@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[70],{2671:function(module){module.exports=JSON.parse("{}")}}]);
