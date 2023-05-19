@@ -1927,7 +1927,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@eeacms/volto-datahub@workspace:src/addons/volto-datahub":
+"@eeacms/volto-datahub@1.0.22, @eeacms/volto-datahub@workspace:src/addons/volto-datahub":
   version: 0.0.0-use.local
   resolution: "@eeacms/volto-datahub@workspace:src/addons/volto-datahub"
   dependencies:
@@ -2030,7 +2030,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@eeacms/volto-eea-website-policy@workspace:src/addons/volto-eea-website-policy":
+"@eeacms/volto-eea-website-policy@1.5.0, @eeacms/volto-eea-website-policy@workspace:src/addons/volto-eea-website-policy":
   version: 0.0.0-use.local
   resolution: "@eeacms/volto-eea-website-policy@workspace:src/addons/volto-eea-website-policy"
   dependencies:
@@ -2041,7 +2041,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@eeacms/volto-eea-website-theme@workspace:src/addons/volto-eea-website-theme":
+"@eeacms/volto-eea-website-theme@1.14.0, @eeacms/volto-eea-website-theme@workspace:src/addons/volto-eea-website-theme":
   version: 0.0.0-use.local
   resolution: "@eeacms/volto-eea-website-theme@workspace:src/addons/volto-eea-website-theme"
   dependencies:
@@ -28561,7 +28561,12 @@ __metadata:
     "@babel/plugin-proposal-class-properties": ^7.12.1
     "@babel/plugin-proposal-export-default-from": ^7.18.10
     "@babel/plugin-proposal-throw-expressions": ^7.18.6
+    "@eeacms/volto-datahub": 1.0.22
     "@eeacms/volto-eea-kitkat": 15.4.0
+    "@eeacms/volto-eea-website-policy": 1.5.0
+    "@eeacms/volto-eea-website-theme": 1.14.0
+    "@eeacms/volto-globalsearch": 1.0.15
+    "@eeacms/volto-searchlib": 0.5.3
     "@loadable/babel-plugin": ^5.13.2
     "@plone/volto": 16.20.0
     "@storybook/addon-a11y": 6.3.13
