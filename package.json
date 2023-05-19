@@ -124,7 +124,12 @@
     "node": "^14 || ^16"
   },
   "resolutions": {
-    "@eeacms/volto-eea-kitkat": "15.4.0"
+    "@eeacms/volto-eea-kitkat": "15.4.0",
+    "@eeacms/volto-datahub": "1.0.22",
+    "@eeacms/volto-eea-website-policy": "1.5.0",
+    "@eeacms/volto-eea-website-theme": "1.14.0",
+    "@eeacms/volto-globalsearch": "1.0.15",
+    "@eeacms/volto-searchlib": "0.5.3"
   },
   "dependencies": {
     "@babel/helper-create-class-features-plugin": "^7.18.9",
