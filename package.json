@@ -129,7 +129,7 @@
     "@eeacms/volto-eea-website-policy": "1.6.1",
     "@eeacms/volto-eea-website-theme": "1.14.1",
     "@eeacms/volto-globalsearch": "1.0.15",
-    "@eeacms/volto-searchlib": "0.5.3"
+    "@eeacms/volto-searchlib": "0.5.4"
   },
   "dependencies": {
     "@babel/helper-create-class-features-plugin": "^7.18.9",
@@ -141,7 +141,7 @@
     "@eeacms/volto-eea-website-policy": "1.6.1",
     "@eeacms/volto-eea-website-theme": "1.14.1",
     "@eeacms/volto-globalsearch": "1.0.15",
-    "@eeacms/volto-searchlib": "0.5.3",
+    "@eeacms/volto-searchlib": "0.5.4",
     "@loadable/babel-plugin": "^5.13.2",
     "@plone/volto": "16.20.0",
     "@storybook/addon-a11y": "6.3.13",
