@@ -26415,9 +26415,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"volto-kitkat-frontend@workspace:.":
+"eea-storybook@workspace:.":
   version: 0.0.0-use.local
-  resolution: "volto-kitkat-frontend@workspace:."
+  resolution: "eea-storybook@workspace:."
   dependencies:
     "@babel/helper-create-class-features-plugin": ^7.18.9
     "@babel/plugin-proposal-class-properties": ^7.12.1

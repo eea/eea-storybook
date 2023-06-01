@@ -3,7 +3,7 @@ version: '3'
 services:
   # uncomment if you want to run frontend from a docker image
   #  frontend:
-  #    image: eeacms/volto-kitkat-frontend
+  #    image: eeacms/eea-storybook
   #    ports:
   #    - "${FRONTEND:-4000}:4000"
   #    depends_on:
