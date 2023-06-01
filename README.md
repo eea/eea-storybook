@@ -5,11 +5,28 @@
 
 ## Introduction
 
-This repository bootstraps a Volto project with all the basic requirements to enable the use of the [volto-eea-kitkat](https://github.com/eea/volto-eea-kitkat) add-on, which introduces several core packages for EEA projects.
+This is the Volto project used to build [Storybook](https://eea.github.io/eea-storybook/) for [EEA Design System](https://eea.github.io/)
+
+
+## EEA Volto Frontend
+
+If you need to bootstrap a new Volto Frontend project for a new EEA Website, see [volto-frontend-template](https://github.com/eea/volto-frontend-template/wiki)
+
+
+## EEA Volto Add-on
+
+If you need to bootstrap a new Volto Add-on for your EEA Website project, see [volto-addon-template](https://github.com/eea/volto-addon-template/wiki)
+
 
 ## Volto training
 
-A training on how to create your own website using Volto is available as part of the Plone training at [https://training.plone.org/5/volto/index.html](https://training.plone.org/5/volto/index.html).
+A training on how to create your own website using Volto is available as part of the Plone training at [https://training.plone.org/](https://training.plone.org/).
+
+
+## Volto documentation
+
+Volto documentation is available at [6.docs.plone.org](https://6.docs.plone.org/volto/index.html)
+
 
 ## Getting started
 
