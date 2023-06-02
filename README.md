@@ -1,15 +1,32 @@
-# volto-kitkat-frontend
+# eea-storybook
 
-[![Pipeline](https://ci.eionet.europa.eu/buildStatus/icon?job=volto%2Fvolto-kitkat-frontend%2Fmaster&subject=pipeline)](https://ci.eionet.europa.eu/view/Github/job/volto/job/volto-kitkat-frontend/job/master/display/redirect)
-[![Release](https://img.shields.io/github/v/release/eea/volto-kitkat-frontend?sort=semver)](https://github.com/eea/volto-kitkat-frontend/releases)
+[![Pipeline](https://ci.eionet.europa.eu/buildStatus/icon?job=volto%2Feea-storybook%2Fmaster&subject=pipeline)](https://ci.eionet.europa.eu/view/Github/job/volto/job/eea-storybook/job/master/display/redirect)
+[![Release](https://img.shields.io/github/v/release/eea/eea-storybook?sort=semver)](https://github.com/eea/eea-storybook/releases)
 
 ## Introduction
 
-This repository bootstraps a Volto project with all the basic requirements to enable the use of the [volto-eea-kitkat](https://github.com/eea/volto-eea-kitkat) add-on, which introduces several core packages for EEA projects.
+This is the Volto project used to build [Storybook](https://eea.github.io/eea-storybook/) for [EEA Design System](https://eea.github.io/)
+
+
+## EEA Volto Frontend
+
+If you need to bootstrap a new Volto Frontend project for a new EEA Website, see [volto-frontend-template](https://github.com/eea/volto-frontend-template/wiki)
+
+
+## EEA Volto Add-on
+
+If you need to bootstrap a new Volto Add-on for your EEA Website project, see [volto-addon-template](https://github.com/eea/volto-addon-template/wiki)
+
 
 ## Volto training
 
-A training on how to create your own website using Volto is available as part of the Plone training at [https://training.plone.org/5/volto/index.html](https://training.plone.org/5/volto/index.html).
+A training on how to create your own website using Volto is available as part of the Plone training at [https://training.plone.org/](https://training.plone.org/).
+
+
+## Volto documentation
+
+Volto documentation is available at [6.docs.plone.org](https://6.docs.plone.org/volto/index.html)
+
 
 ## Getting started
 
@@ -35,8 +52,8 @@ A training on how to create your own website using Volto is available as part of
 
 4.  Clone:
 
-        git clone https://github.com/eea/volto-kitkat-frontend.git
-        cd volto-kitkat-frontend
+        git clone https://github.com/eea/eea-storybook.git
+        cd eea-storybook
 
 5.  Install the project packages
 
@@ -74,8 +91,8 @@ A training on how to create your own website using Volto is available as part of
 1.  Install [Docker Compose](https://docs.docker.com/compose/install/)
 1.  Start the Plone backend and the Volto frontend:
 
-        git clone https://github.com/eea/volto-kitkat-frontend.git
-        cd volto-kitkat-frontend
+        git clone https://github.com/eea/eea-storybook.git
+        cd eea-storybook
 
         docker-compose pull
         docker-compose up -d
@@ -92,8 +109,8 @@ We use [Docker](https://www.docker.com/), [Rancher](https://rancher.com/) and [J
 
 ### Release
 
-- Create a new release of this code via `git tag` command or [Draft new release](https://github.com/eea/volto-kitkat-frontend/releases/new) on Github.
-  - A new Docker image is built and released automatically on [DockerHub](https://hub.docker.com/r/eeacms/volto-kitkat-frontend) based on this tag.
+- Create a new release of this code via `git tag` command or [Draft new release](https://github.com/eea/eea-storybook/releases/new) on Github.
+  - A new Docker image is built and released automatically on [DockerHub](https://hub.docker.com/r/eeacms/eea-storybook) based on this tag.
 
 ### Upgrade
 

@@ -2,12 +2,12 @@ pipeline {
   environment {
     RANCHER_STACKID = ""
     RANCHER_ENVID = ""
-    GIT_NAME = "volto-kitkat-frontend"
-    registry = "eeacms/volto-kitkat-frontend"
-    template = "templates/volto-kitkat-frontend"
+    GIT_NAME = "eea-storybook"
+    registry = "eeacms/eea-storybook"
+    template = "templates/eea-storybook"
     dockerImage = ''
     tagName = ''
-    SONARQUBE_TAG = 'volto-kitkat-frontend.eionet.europa.eu'
+    SONARQUBE_TAG = 'eea-storybook.eionet.europa.eu'
   }
 
   agent any
