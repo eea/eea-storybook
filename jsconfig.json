@@ -136,6 +136,9 @@
             "@eeacms/volto-nextcloud-video-block": [
                 "addons/volto-nextcloud-video-block/src"
             ],
+            "@eeacms/volto-eea-website-policy": [
+                "addons/volto-eea-website-policy/src"
+            ],
             "volto-sentry": [
                 "addons/volto-subsites/src"
             ]
