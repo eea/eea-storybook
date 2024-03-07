@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[74],{"./locales/sq.json":function(module){module.exports=JSON.parse("{}")}}]);
