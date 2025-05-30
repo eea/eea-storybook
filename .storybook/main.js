@@ -173,12 +173,6 @@ module.exports = {
         extender.modify(acc, { target: 'web', dev: 'dev' }, config),
       resultConfig,
     );
-
-    // Note: we don't actually support razzle plugins, which are also a feature
-    // of the razzle.extend.js addons file. Those features are probably
-    // provided in a different manner by Storybook plugins (for example scss
-    // loaders).
-
     return extendedConfig;
   },
   core: {
