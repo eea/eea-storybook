@@ -56,13 +56,7 @@ const defaultRazzleOptions = {
   staticCssInDev: false,
   emitOnErrors: false,
   disableWebpackbar: false,
-  browserslist: [
-    '>1%',
-    'last 4 versions',
-    'Firefox ESR',
-    'not ie 11',
-    'not dead',
-  ],
+  browserslist: ['>1%', 'last 4 versions', 'Firefox ESR', 'not ie 11', 'not dead'],
 };
 
 module.exports = {
@@ -70,13 +64,9 @@ module.exports = {
   stories: [
     '../src/addons/volto-eea-design-system/src/ui/**/*.stories.mdx', //TODO: src/addons/**/*.stories.mdx
     '../src/addons/volto-eea-design-system/src/ui/**/*.stories.@(js|jsx)',
+    '../src/addons/volto-plotlycharts/src/**/*.stories.@(js|jsx)',
   ],
-  addons: [
-    '@storybook/addon-links',
-    '@storybook/addon-essentials',
-    '@storybook/addon-a11y',
-    '@whitespace/storybook-addon-html',
-  ],
+  addons: ['@storybook/addon-links', '@storybook/addon-essentials', '@storybook/addon-a11y', '@whitespace/storybook-addon-html'],
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
     // You can change the configuration based on that.
@@ -137,12 +127,8 @@ module.exports = {
     };
     const experimental = {};
     const miniPlugin = new MiniCssExtractPlugin({
-      filename: `${razzleOptions.cssPrefix}/bundle.[${
-        experimental.newContentHash ? 'contenthash' : 'chunkhash'
-      }:8].css`,
-      chunkFilename: `${razzleOptions.cssPrefix}/[name].[${
-        experimental.newContentHash ? 'contenthash' : 'chunkhash'
-      }:8].chunk.css`,
+      filename: `${razzleOptions.cssPrefix}/bundle.[${experimental.newContentHash ? 'contenthash' : 'chunkhash'}:8].css`,
+      chunkFilename: `${razzleOptions.cssPrefix}/[name].[${experimental.newContentHash ? 'contenthash' : 'chunkhash'}:8].chunk.css`,
     });
     config.plugins.unshift(miniPlugin);
     const resultConfig = {
@@ -156,10 +142,17 @@ module.exports = {
       },
     };
 
+    resultConfig.module.rules[1].exclude = (input) => {
+      const shouldExclude = /node_modules\/(?!(@plone\/volto)\/)/.test(input) && !addonPaths.some((p) => input.includes(p));
+
+      // Log every file checked, and whether it's excluded
+      console.log('[STORYBOOK/BABEL] Checking:', input, '=> Exclude:', shouldExclude);
+      console.log('here shouldExclude', shouldExclude);
+      return shouldExclude;
+    };
+
     // Addons have to be loaded with babel
-    const addonPaths = registry.addonNames.map((addon) =>
-      fs.realpathSync(registry.packages[addon].modulePath),
-    );
+    const addonPaths = registry.addonNames.map((addon) => fs.realpathSync(registry.packages[addon].modulePath));
     resultConfig.module.rules[1].exclude = (input) =>
       // exclude every input from node_modules except from @plone/volto
       /node_modules\/(?!(@plone\/volto)\/)/.test(input) &&
@@ -168,11 +161,7 @@ module.exports = {
 
     const addonExtenders = registry.getAddonExtenders().map((m) => require(m));
 
-    const extendedConfig = addonExtenders.reduce(
-      (acc, extender) =>
-        extender.modify(acc, { target: 'web', dev: 'dev' }, config),
-      resultConfig,
-    );
+    const extendedConfig = addonExtenders.reduce((acc, extender) => extender.modify(acc, { target: 'web', dev: 'dev' }, config), resultConfig);
     return extendedConfig;
   },
   core: {
