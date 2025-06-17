@@ -62,7 +62,7 @@ const defaultRazzleOptions = {
 module.exports = {
   // reactOptions: { legacyRootApi: true },
   stories: [
-    '../src/addons/**/*.stories.mdx', //TODO: src/addons/**/*.stories.mdx
+    '../src/addons/**/*.stories.mdx',
     '../src/addons/**/*.stories.@(js|jsx)',
   ],
   addons: ['@storybook/addon-links', '@storybook/addon-essentials', '@storybook/addon-a11y', '@whitespace/storybook-addon-html'],
