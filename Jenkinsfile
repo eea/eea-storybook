@@ -14,39 +14,6 @@ pipeline {
 
   stages {
 
-    stage('Integration tests') {
-      parallel {
-
-        stage("Docker test build") {
-             when {
-               not {
-                environment name: 'CHANGE_ID', value: ''
-               }
-               not {
-                 buildingTag()
-               }
-               environment name: 'CHANGE_TARGET', value: 'master'
-             }
-             environment {
-              IMAGE_NAME = BUILD_TAG.toLowerCase()
-             }
-             steps {
-               node(label: 'docker-host') {
-                 script {
-                   checkout scm
-                   try {
-                     dockerImage = docker.build("${IMAGE_NAME}", "--no-cache .")
-                   } finally {
-                     sh script: "docker rmi ${IMAGE_NAME}", returnStatus: true
-                   }
-                 }
-               }
-             }
-          }
-
-
-      }
-    }
 
 
     stage('Pull Request') {
@@ -89,9 +56,13 @@ pipeline {
       }
     }
 
-    stage('Build & Push ( on tag )') {
+    stage('Build & Push ( on tag, master & develop)') {
       when {
-        buildingTag()
+        anyOf {
+          buildingTag()
+          branch 'develop'
+          branch 'master'
+        }
       }
       steps{
         node(label: 'docker-host') {
