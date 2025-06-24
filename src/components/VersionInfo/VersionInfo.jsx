@@ -1,4 +1,3 @@
-// src/components/VersionInfo/VersionInfo.jsx
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { VersionOverview } from '@plone/volto/components';
