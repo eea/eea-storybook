@@ -61,10 +61,7 @@ const defaultRazzleOptions = {
 
 module.exports = {
   // reactOptions: { legacyRootApi: true },
-  stories: [
-    '../src/addons/**/*.stories.mdx', //TODO: src/addons/**/*.stories.mdx
-    '../src/addons/**/*.stories.@(js|jsx)',
-  ],
+  stories: ['../src/addons/**/*.stories.mdx', '../src/addons/**/*.stories.@(js|jsx)', '../src/**/*.stories.@(js|jsx)'],
   addons: ['@storybook/addon-links', '@storybook/addon-essentials', '@storybook/addon-a11y', '@whitespace/storybook-addon-html'],
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
