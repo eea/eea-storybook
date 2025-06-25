@@ -83,7 +83,6 @@ omelette
 public/critical.css
 src/addons/*
 /cache
-
 # yarn 3
 .pnp.*
 .yarn/*
