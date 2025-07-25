@@ -20,7 +20,8 @@
     "src/addons/*"
   ],
   "addons": [
-    "@eeacms/volto-eea-design-system"
+    "@eeacms/volto-eea-design-system",
+    "@eeacms/volto-plotlycharts"
   ],
   "jest": {
     "modulePathIgnorePatterns": [
