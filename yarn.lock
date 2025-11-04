@@ -3284,6 +3284,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eeacms/volto-datablocks@npm:*":
+  version: 7.3.3
+  resolution: "@eeacms/volto-datablocks@npm:7.3.3"
+  dependencies:
+    "@eeacms/countup": "*"
+    "@eeacms/volto-embed": "*"
+    "@eeacms/volto-group-block": "*"
+    "@eeacms/volto-listing-block": "*"
+    "@eeacms/volto-matomo": "*"
+    d3: 7.1.1
+    date-fns: 2.28.0
+    humanize-plus: ^1.8.2
+    object-hash: 2.2.0
+    react-visibility-sensor: 5.1.1
+    sanitize-html: 2.12.1
+  checksum: 9312d638df6f3761ec64757038f05b06756e78030ee1131d8ba8031e9762bc623535cee7f59112c240bbc5a289eca969c299c7eae7e05368cfe43f291cea9796
+  languageName: node
+  linkType: hard
+
 "@eeacms/volto-eea-design-system@npm:1.37.0":
   version: 1.37.0
   resolution: "@eeacms/volto-eea-design-system@npm:1.37.0"
@@ -3356,6 +3375,25 @@ __metadata:
   dependencies:
     "@datapunt/matomo-tracker-react": 0.3.1
   checksum: 238fe12d34eb1d108998d536c036b8ca4f68afd35d409d6a12a9331a0b93c87dd048079712d9922bef4ec0dbc3aded188aac98e3a4c5ab9ee9cd6e8b6c0eb27a
+  languageName: node
+  linkType: hard
+
+"@eeacms/volto-plotlycharts@npm:13.0.2":
+  version: 13.0.2
+  resolution: "@eeacms/volto-plotlycharts@npm:13.0.2"
+  dependencies:
+    "@eeacms/react-chart-editor": 0.47.4
+    "@eeacms/volto-datablocks": "*"
+    "@eeacms/volto-embed": "*"
+    "@eeacms/volto-matomo": "*"
+    "@plone/scripts": "*"
+    handsontable: ^15.2.0
+    jsoneditor: 10.2.0
+    jszip: 3.10.1
+    plotly.js: ^2.35.3
+    react-plotly.js: 2.6.0
+    remixicon: 4.6.0
+  checksum: d3b60c14af4dbffe9f89742773eef87a7f61a2bea5817250da02ece59ad957144d290d6da093f0c78ef704b294536e453323508ce2f714b409112a5dbd9ed55f
   languageName: node
   linkType: hard
 
@@ -14719,6 +14757,7 @@ __metadata:
     "@babel/plugin-proposal-export-default-from": ^7.18.10
     "@babel/plugin-proposal-throw-expressions": ^7.18.6
     "@eeacms/volto-eea-design-system": 1.37.0
+    "@eeacms/volto-plotlycharts": 13.0.2
     "@loadable/babel-plugin": ^5.13.2
     "@plone/volto": 17.22.0
     "@storybook/addon-a11y": ^6.5.16
