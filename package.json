@@ -12,8 +12,9 @@
     "start:prod": "NODE_ENV=production node build/server.js",
     "i18n": "NODE_ENV=production node node_modules/@plone/volto/src/i18n.js",
     "develop": "missdev --config=jsconfig.json --output=addons --fetch-https",
-    "storybook": "storybook dev -p 6006 -s ./.storybook/assets",
-    "build-storybook": "storybook build -o docs",
+    "storybook:clean-addon-links": "find src/addons -path '*/node_modules/@eeacms/*' -type l -delete",
+    "storybook": "yarn storybook:clean-addon-links && storybook dev -p 6006 -s ./.storybook/assets",
+    "build-storybook": "yarn storybook:clean-addon-links && storybook build -o docs",
     "volto-update-deps": "volto-update-deps"
   },
   "private": true,

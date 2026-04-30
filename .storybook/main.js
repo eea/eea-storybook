@@ -66,8 +66,8 @@ module.exports = {
   },
   // reactOptions: { legacyRootApi: true },
   stories: [
-    '../src/addons/**/*.stories.mdx',
-    '../src/addons/**/!(Breadcrumbs|FileUpload).stories.@(js|jsx)',
+    '../src/addons/*/src/**/*.stories.mdx',
+    '../src/addons/*/src/**/!(Breadcrumbs|FileUpload).stories.@(js|jsx)',
     '../src/components/**/*.stories.@(js|jsx)',
   ],
   addons: [
@@ -148,6 +148,13 @@ module.exports = {
           ...config.resolve.alias,
           ...baseConfig.resolve.alias,
         },
+      },
+      snapshot: {
+        ...config.snapshot,
+        managedPaths: [
+          ...(config.snapshot?.managedPaths || []),
+          ...registry.addonNames.map((addon) => path.join(registry.packages[addon].modulePath, 'node_modules')),
+        ],
       },
     };
 
