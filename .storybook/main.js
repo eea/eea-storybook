@@ -70,6 +70,7 @@ module.exports = {
     '../src/addons/*/src/**/!(Breadcrumbs|FileUpload).stories.@(js|jsx)',
     '../src/components/**/*.stories.@(js|jsx)',
   ],
+  staticDirs: ['./assets'],
   addons: [
     '@storybook/addon-webpack5-compiler-babel',
     '@storybook/addon-links',
