@@ -4,6 +4,7 @@ import { StaticRouter } from 'react-router-dom';
 import { IntlProvider } from 'react-intl';
 import enMessages from '@root/../locales/en.json';
 import { MINIMAL_VIEWPORTS } from '@storybook/addon-viewport';
+import { withReduxProvider } from './redux-decorator';
 import '@root/theme';
 
 const customMobileViewports = {
@@ -63,6 +64,7 @@ export const parameters = {
 };
 
 export const decorators = [
+  withReduxProvider,
   (Story) => (
     <IntlProvider messages={enMessages} locale="en" defaultLocale="en">
       <StaticRouter location="/">
