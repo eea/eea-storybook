@@ -31,12 +31,16 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
 
-    - name: Push Storybook build changes
+    - name: Build Storybook
       run: |
            npm install -g mrs-developer
            make develop
            yarn install
            yarn build-storybook
+
+    - name: Push Storybook build changes
+      if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
+      run: |
            git config user.name github-actions
            git config user.email github-actions@github.com
            git add docs
