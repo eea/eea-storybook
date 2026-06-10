@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkeea_storybook=self.webpackChunkeea_storybook||[]).push([[9873],{"./node_modules/@eeacms/volto-datablocks/src/components/manage/Blocks/CountryFlag/data/svg/bv.svg":function(module,__unused_webpack_exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/bv.6d8f6e66.svg"}}]);

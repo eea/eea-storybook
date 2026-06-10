@@ -60,9 +60,23 @@ const defaultRazzleOptions = {
 };
 
 module.exports = {
+  framework: {
+    name: '@storybook/react-webpack5',
+    options: {},
+  },
   // reactOptions: { legacyRootApi: true },
-  stories: ['../src/addons/**/*.stories.mdx', '../src/addons/**/*.stories.@(js|jsx)', '../src/**/*.stories.@(js|jsx)'],
-  addons: ['@storybook/addon-links', '@storybook/addon-essentials', '@storybook/addon-a11y', '@whitespace/storybook-addon-html'],
+  stories: [
+    '../src/addons/*/src/**/*.stories.mdx',
+    '../src/addons/*/src/**/!(Breadcrumbs|FileUpload).stories.@(js|jsx)',
+    '../src/components/**/*.stories.@(js|jsx)',
+  ],
+  staticDirs: ['./assets'],
+  addons: [
+    '@storybook/addon-webpack5-compiler-babel',
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-a11y',
+  ],
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
     // You can change the configuration based on that.
@@ -84,8 +98,8 @@ module.exports = {
       [],
       defaultRazzleOptions,
     );
-    const AddonConfigurationRegistry = require('@plone/volto/addon-registry');
-    const registry = new AddonConfigurationRegistry(projectRootPath);
+    const { AddonRegistry } = require('@plone/registry/addon-registry');
+    const registry = new AddonRegistry(projectRootPath);
     config = lessPlugin({
       registry,
     }).modifyWebpackConfig({
@@ -136,10 +150,54 @@ module.exports = {
           ...baseConfig.resolve.alias,
         },
       },
+      snapshot: {
+        ...config.snapshot,
+        managedPaths: [
+          ...(config.snapshot?.managedPaths || []),
+          ...registry.addonNames.map((addon) => path.join(registry.packages[addon].modulePath, 'node_modules')),
+        ],
+      },
     };
 
     // Addons have to be loaded with babel
     const addonPaths = registry.addonNames.map((addon) => fs.realpathSync(registry.packages[addon].modulePath));
+    const voltoSourcePath = fs.realpathSync(path.join(projectRootPath, 'node_modules/@plone/volto/src'));
+    const voltoSlateSourcePath = fs.realpathSync(path.join(projectRootPath, 'node_modules/@plone/volto-slate/src'));
+    resultConfig.module.rules.push({
+      test: /\.(js|jsx|ts|tsx)$/,
+      include: [path.join(projectRootPath, 'src'), voltoSourcePath, voltoSlateSourcePath, ...addonPaths],
+      use: [
+        {
+          loader: require.resolve('babel-loader'),
+          options: {
+            babelrc: false,
+            configFile: false,
+            presets: [
+              [
+                require.resolve('razzle/babel'),
+                {
+                  '@babel/preset-react': { runtime: 'automatic' },
+                },
+              ],
+            ],
+            plugins: [
+              require.resolve('babel-plugin-lodash'),
+              require.resolve('@babel/plugin-proposal-export-default-from'),
+              require.resolve('@babel/plugin-syntax-export-namespace-from'),
+              require.resolve('@babel/plugin-proposal-throw-expressions'),
+              require.resolve('@babel/plugin-proposal-nullish-coalescing-operator'),
+              [
+                require.resolve('babel-plugin-root-import'),
+                {
+                  rootPathSuffix: './src',
+                },
+              ],
+              require.resolve('@loadable/babel-plugin'),
+            ],
+          },
+        },
+      ],
+    });
     resultConfig.module.rules[1].exclude = (input) =>
       // exclude every input from node_modules except from @plone/volto
       /node_modules\/(?!(@plone\/volto)\/)/.test(input) &&
@@ -162,7 +220,7 @@ module.exports = {
     return {
       ...options,
       plugins: [
-        ...options.plugins,
+        ...(options.plugins || []),
         [
           './node_modules/babel-plugin-root-import/build/index.js',
           {
