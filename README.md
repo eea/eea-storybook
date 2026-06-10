@@ -38,12 +38,12 @@ Volto documentation is available at [6.docs.plone.org](https://6.docs.plone.org/
         source ~/.bash_profile
         nvm version
 
-2.  Install latest `NodeJS LTS 16.x`:
+2.  Install latest `NodeJS LTS 22.x`:
 
-        nvm install 16
-        nvm use 16
+        nvm install 22
+        nvm use 22
         node -v
-        v16.13.1
+        v22.x
 
 3.  Install `yarn`
 
