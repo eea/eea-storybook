@@ -61,6 +61,11 @@ export const parameters = {
     },
     expanded: false,
   },
+  options: {
+    storySort: {
+      order: ['EEA', '*'],
+    },
+  },
 };
 
 export const decorators = [
