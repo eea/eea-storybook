@@ -145,6 +145,8 @@ module.exports = {
       ...config,
       resolve: {
         ...config.resolve,
+        // Linked addon checkouts also use the Storybook project's dependencies.
+        modules: [...(config.resolve.modules || ['node_modules']), path.join(projectRootPath, 'node_modules')],
         alias: {
           ...config.resolve.alias,
           ...baseConfig.resolve.alias,
@@ -161,6 +163,12 @@ module.exports = {
 
     // Addons have to be loaded with babel
     const addonPaths = registry.addonNames.map((addon) => fs.realpathSync(registry.packages[addon].modulePath));
+    // Less must also include real paths when an addon is linked from a sibling checkout.
+    resultConfig.module.rules.forEach((rule) => {
+      if (rule.test instanceof RegExp && rule.test.test('addon.less') && Array.isArray(rule.include)) {
+        rule.include.push(...addonPaths);
+      }
+    });
     const voltoSourcePath = fs.realpathSync(path.join(projectRootPath, 'node_modules/@plone/volto/src'));
     const voltoSlateSourcePath = fs.realpathSync(path.join(projectRootPath, 'node_modules/@plone/volto-slate/src'));
     resultConfig.module.rules.push({
