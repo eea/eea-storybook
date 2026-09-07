@@ -3357,7 +3357,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-listing-block@*, @eeacms/volto-listing-block@workspace:src/addons/volto-listing-block":
+"@eeacms/volto-listing-block@*, @eeacms/volto-listing-block@workspace:*, @eeacms/volto-listing-block@workspace:src/addons/volto-listing-block":
   version: 0.0.0-use.local
   resolution: "@eeacms/volto-listing-block@workspace:src/addons/volto-listing-block"
   dependencies:
@@ -3376,19 +3376,6 @@ __metadata:
     slick-carousel: 1.8.1
   languageName: unknown
   linkType: soft
-
-"@eeacms/volto-listing-block@git+https://github.com/eea/volto-listing-block.git#ims-vizualization-cards":
-  version: 10.0.2
-  resolution: "@eeacms/volto-listing-block@https://github.com/eea/volto-listing-block.git#commit=e17fe3b4a3bec26f070f4d6b18682035288c981b"
-  dependencies:
-    "@eeacms/volto-object-widget": "*"
-    "@eeacms/volto-widget-theme-picker": "*"
-    react-resize-detector: 7.1.2
-    react-slick: ^0.30.1
-    slick-carousel: 1.8.1
-  checksum: 83a07fa7480e4b49937057da6c00bf2e907adadf668c74624ffd6fa8ec11095537f0c49fef7a368258af1adc5ce4b9d38c91cd81a3324a4128df83fa2d0cf98a
-  languageName: node
-  linkType: hard
 
 "@eeacms/volto-matomo@npm:*":
   version: 5.0.0
@@ -14049,7 +14036,7 @@ __metadata:
     "@dnd-kit/sortable": 7.0.2
     "@dnd-kit/utilities": 3.2.2
     "@eeacms/volto-eea-design-system": 1.60.2
-    "@eeacms/volto-listing-block": "git+https://github.com/eea/volto-listing-block.git#ims-vizualization-cards"
+    "@eeacms/volto-listing-block": "workspace:*"
     "@eeacms/volto-plotlycharts": 13.0.2
     "@fiverr/afterbuild-webpack-plugin": ^1.0.0
     "@jest/globals": ^29.7.0
