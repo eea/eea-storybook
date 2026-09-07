@@ -14,5 +14,13 @@
     "branch": "master",
     "develop": true,
     "path": "src"
+  },
+  "volto-listing-block": {
+    "url": "git@github.com:eea/volto-listing-block.git",
+    "https": "https://github.com/eea/volto-listing-block.git",
+    "package": "@eeacms/volto-listing-block",
+    "branch": "ims-vizualization-cards",
+    "develop": true,
+    "path": "src"
   }
 }

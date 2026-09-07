@@ -12,7 +12,7 @@
     "start:prod": "NODE_ENV=production node build/server.js",
     "i18n": "NODE_ENV=production node node_modules/@plone/volto/src/i18n.js",
     "develop": "missdev --config=jsconfig.json --output=addons --fetch-https",
-    "storybook:clean-addon-links": "find src/addons -path '*/node_modules/@eeacms/*' -type l -delete",
+    "storybook:clean-addon-links": "find -H src/addons/* -path '*/node_modules/@eeacms/*' -type l -delete",
     "storybook": "yarn storybook:clean-addon-links && storybook dev -p 6006",
     "build-storybook": "yarn storybook:clean-addon-links && storybook build -o docs",
     "volto-update-deps": "volto-update-deps"
@@ -23,7 +23,8 @@
   ],
   "addons": [
     "@eeacms/volto-eea-design-system",
-    "@eeacms/volto-plotlycharts"
+    "@eeacms/volto-plotlycharts",
+    "@eeacms/volto-listing-block"
   ],
   "jest": {
     "modulePathIgnorePatterns": [
@@ -137,6 +138,7 @@
     "@dnd-kit/sortable": "7.0.2",
     "@dnd-kit/utilities": "3.2.2",
     "@eeacms/volto-eea-design-system": "1.60.2",
+    "@eeacms/volto-listing-block": "git+https://github.com/eea/volto-listing-block.git#ims-vizualization-cards",
     "@eeacms/volto-plotlycharts": "13.0.2",
     "@loadable/babel-plugin": "^5.13.2",
     "@loadable/component": "5.16.7",
