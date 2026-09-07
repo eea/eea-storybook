@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Renewable energy — illustrative data</title><desc id="desc">Four bars increase from 2020 to 2023. These are demonstration values.</desc>
+<rect width="640" height="360" fill="#f3f8f7"/><g font-family="Arial,sans-serif" fill="#263f48"><text x="44" y="48" font-size="24">Renewable energy</text><text x="44" y="76" font-size="14">Illustrative data · share of energy</text></g>
+<path d="M60 108V285H594" fill="none" stroke="#8aa1a5"/>
+<g fill="#007b6c"><rect x="100" y="215" width="72" height="70"/><rect x="228" y="184" width="72" height="101"/><rect x="356" y="149" width="72" height="136"/><rect x="484" y="116" width="72" height="169"/></g>
+<g font-family="Arial,sans-serif" font-size="17" fill="#263f48" text-anchor="middle"><text x="136" y="316">2020</text><text x="264" y="316">2021</text><text x="392" y="316">2022</text><text x="520" y="316">2023</text></g></svg>
