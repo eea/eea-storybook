@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import UniversalCard from '@eeacms/volto-listing-block/components/UniversalCard/UniversalCard';
 import { CARD_ELEMENTS, VISUALIZATION_ELEMENTS } from '@eeacms/volto-listing-block/components/UniversalCard/elements';
-import '@eeacms/volto-listing-block/less/visualization-cards.less';
+import '@eeacms/volto-listing-block/less/benchmark-visualization.less';
 
 // The Listing Block has two card types, Card and List item; everything else
 // is a control of these. Each flavour below is one configuration.
@@ -15,7 +15,7 @@ const flavours = {
       imagePosition: 'top',
       elementsOrder: VISUALIZATION_ELEMENTS,
       hasBenchmarkLevel: true,
-      styles: { 'topAccent:bool': true },
+      styles: { 'border:noprefix': 'top-accent' },
     },
   },
   card: {
@@ -29,6 +29,19 @@ const flavours = {
   cardRight: {
     label: 'Card, image on the right',
     itemModel: { '@type': 'card', imagePosition: 'right' },
+  },
+  cardNoImage: {
+    label: 'Card, no image',
+    itemModel: { '@type': 'card', imagePosition: 'none' },
+  },
+  flip: {
+    label: 'Card, flip',
+    // the date and the description on the back, the rest on the front
+    itemModel: { '@type': 'card', imagePosition: 'top', flip: true, flipSides: { date: 'back', description: 'back' } },
+  },
+  logo: {
+    label: 'Card, title and logo (teasers)',
+    itemModel: { '@type': 'card', imagePosition: 'top', contentMode: 'logo' },
   },
   overlay: {
     label: 'Card, image only (title on image)',
@@ -57,6 +70,7 @@ const legacyTemplates = {
   imageCard: 'Image Card',
   imageOnLeft: 'Image on left',
   imageOnRight: 'Image on right',
+  imageOnBottom: 'Image on bottom',
   item: 'Listing Item',
   searchItem: 'Search Item',
   simpleItem: 'Simple Item',
@@ -169,7 +183,7 @@ const Grid = ({ children, wide }) => (
   </div>
 );
 
-const ListingCardsDemo = ({ flavour, elementsOrder, displayContentType, displayDate, displayDescription, displayBenchmarkLevel, displayTags, showCTA, enableCTAPopup, topAccent, isEditMode, allFlavours = false, legacy = false }) => {
+const ListingCardsDemo = ({ flavour, elementsOrder, displayContentType, displayDate, displayDescription, displayBenchmarkLevel, displayTags, showCTA, enableCTAPopup, border, dropShadow, isEditMode, allFlavours = false, legacy = false }) => {
   const store = useDemoStore();
 
   // the controls of the "Card elements" sidebar widget
@@ -198,7 +212,8 @@ const ListingCardsDemo = ({ flavour, elementsOrder, displayContentType, displayD
         : {
             hasBenchmarkLevel: displayBenchmarkLevel,
             ...(elementsOrder ? { elementsOrder: orders[elementsOrder] } : {}),
-            styles: { ...(itemModel.styles || {}), 'topAccent:bool': topAccent },
+            // the "Border" selector and the opt-in drop shadow of Card styling
+            styles: { ...(itemModel.styles || {}), 'border:noprefix': border, 'dropShadow:bool': dropShadow },
           }),
     };
   };
@@ -240,7 +255,7 @@ export default {
     layout: 'fullscreen',
     docs: {
       description: {
-        component: 'Listing Block cards: two card types, Card and List item, configured with controls. The visualization card is a Card with the top accent border, the visualization elements order and the benchmark level. Defaults: content type off, date on, description off and CTA popup off. Title, preview and CTA lead to the same destination on every card. Use a viewport at least 1280 px wide to try popups.',
+        component: 'Listing Block cards: two card types, Card and List item, configured with controls. The visualization card is a Card with the top accent border, the visualization elements order and the benchmark level. Cards can also flip, show the title and logo (teasers) or only the image, with a border and an opt-in drop shadow. Defaults: content type off, date on, description off and CTA popup off. Title, preview and CTA lead to the same destination on every card. Use a viewport at least 1280 px wide to try popups.',
       },
     },
   },
@@ -264,10 +279,17 @@ export default {
     displayTags: { name: 'Tags', control: 'boolean' },
     showCTA: { name: 'Call to action', control: 'boolean' },
     enableCTAPopup: { name: 'Enable CTA content popup', control: 'boolean' },
-    topAccent: {
-      name: 'Top accent border',
+    border: {
+      name: 'Border',
+      control: 'select',
+      options: ['no-border', 'bordered', 'top-accent'],
+      labels: { 'no-border': 'No border', bordered: 'Bordered', 'top-accent': 'Top accent border' },
+      description: 'Card styling: the top accent border is the thick top border of the visualization card (cards only).',
+    },
+    dropShadow: {
+      name: 'Drop shadow',
       control: 'boolean',
-      description: 'Card styling: the thick top border of the visualization card.',
+      description: 'Card styling: opt-in shadow (cards only).',
     },
     isEditMode: { name: 'Edit mode', control: 'boolean' },
     allFlavours: { table: { disable: true } },
@@ -283,7 +305,8 @@ export default {
     displayTags: false,
     showCTA: true,
     enableCTAPopup: false,
-    topAccent: true,
+    border: 'top-accent',
+    dropShadow: false,
     isEditMode: false,
   },
 };
@@ -300,11 +323,11 @@ export const DefaultCard = {
     flavour: 'card',
     elementsOrder: 'default',
     displayBenchmarkLevel: false,
-    topAccent: false,
+    border: 'no-border',
   },
 };
 export const ListItem = {
-  args: { flavour: 'listItem', topAccent: false, displayDescription: true },
+  args: { flavour: 'listItem', border: 'no-border', displayDescription: true },
 };
 export const PopupEnabled = {
   args: { enableCTAPopup: true },
@@ -316,4 +339,30 @@ export const AllCardVariationsWithPopup = {
   parameters: { viewport: { defaultViewport: 'responsive' } },
 };
 export const Editing = { args: { allFlavours: true, isEditMode: true } };
+export const FlipCard = {
+  args: {
+    flavour: 'flip',
+    elementsOrder: 'default',
+    displayBenchmarkLevel: false,
+    displayDescription: true,
+    border: 'no-border',
+  },
+};
+export const TitleAndLogo = {
+  args: {
+    flavour: 'logo',
+    elementsOrder: 'default',
+    displayBenchmarkLevel: false,
+    border: 'no-border',
+  },
+};
+export const BorderedWithShadow = {
+  args: {
+    flavour: 'card',
+    elementsOrder: 'default',
+    displayBenchmarkLevel: false,
+    border: 'bordered',
+    dropShadow: true,
+  },
+};
 export const LegacyTemplates = { args: { legacy: true } };

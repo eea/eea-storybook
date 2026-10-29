@@ -7,14 +7,15 @@ The Listing Block has two card types, **Card** and **List item**, configured
 with controls instead of separate templates. The stories show their flavours:
 the visualization card (a Card with the top accent border, the visualization
 elements order and the benchmark level), the card with the image on top, left
-or right, the image-only card, and the list item in its default and compact
-sizes. **Legacy templates** shows that the eight former card templates saved
-on existing pages still render.
+or right or without an image, the flip card, the title and logo card (teasers),
+the image-only card, and the list item in its default and compact sizes.
+**Legacy templates** shows that the nine former card templates saved on
+existing pages still render.
 
 Defaults: content type off, date on, description off and CTA popup off. The
 controls expose the card elements (content type, date, description, benchmark
-level, tags, call to action), their order, the popup, the top accent border and
-edit mode.
+level, tags, call to action), their order, the popup, the border (no border,
+bordered or top accent), the drop shadow and edit mode.
 
 Title, preview and CTA share the same destination on every card. At widths of
 1280 px or more, enabling the popup opens the seeded content. Below that width,
