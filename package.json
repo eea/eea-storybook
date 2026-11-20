@@ -19,7 +19,9 @@
   },
   "private": true,
   "workspaces": [
-    "src/addons/*"
+    "src/addons/*",
+    "!src/addons/volto-eea-design-system",
+    "!src/addons/volto-listing-block"
   ],
   "addons": [
     "@eeacms/volto-eea-design-system",
