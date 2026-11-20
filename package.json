@@ -21,7 +21,8 @@
   "workspaces": [
     "src/addons/*",
     "!src/addons/volto-eea-design-system",
-    "!src/addons/volto-listing-block"
+    "!src/addons/volto-listing-block",
+    "!src/addons/volto-plotlycharts"
   ],
   "addons": [
     "@eeacms/volto-eea-design-system",
