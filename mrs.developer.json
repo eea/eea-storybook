@@ -5,7 +5,7 @@
     "package": "@eeacms/volto-eea-design-system",
     "branch": "develop",
     "develop": true,
-    "path": "src"
+    "path": "packages/volto-eea-design-system/src"
   },
   "volto-plotlycharts": {
     "url": "git@github.com:eea/volto-plotlycharts.git",
@@ -21,6 +21,6 @@
     "package": "@eeacms/volto-listing-block",
     "branch": "develop",
     "develop": true,
-    "path": "src"
+    "path": "packages/volto-listing-block/src"
   }
 }
